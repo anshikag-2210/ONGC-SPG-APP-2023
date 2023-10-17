@@ -10,6 +10,7 @@ import SwiftUI
 struct authorsDetailView: View {
  @State var author: AuthorsStruct
     var body: some View {
+
      VStack{
       Image("author1")
        .clipShape(Circle())
@@ -23,11 +24,55 @@ struct authorsDetailView: View {
        Text(author.PD_COUNTRY)
       }.foregroundColor(Color(hue: 1.0, saturation: 0.067, brightness: 0.506))
       Spacer()
-      VStack{
-       Text("Author Paper view")
+      let filteredAuthorData = scheduleDataArr.filter { scheduleItem in
+  //     return _theme.contains { thitem in
+       return scheduleItem.AU_ID == author.CMB_ID
+  //     }
+      }
+      List(filteredAuthorData, id:\.CMB_ID){ authPaper in
+       NavigationLink(destination: taskSummaryView(event: authPaper)){
+        VStack(alignment: .leading){
+         Spacer()
+         HStack{
+          Text(authPaper.EVT_PAPER_EVENT_PAPERID)
+           .fontWeight(.bold)
+          Text("(")
+          Text(authPaper.EVT_TYPE)
+           .fontWeight(.bold)
+          Text(")")
+         }.foregroundColor(Color.green)
+          .font(.system(size: 13))
+         Spacer()
+         Text(authPaper.EVT_TITLE).foregroundColor(Color.green)
+          .font(.system(size: 12))
+         Spacer()
+         HStack{
+          Text("Session: ").bold()
+          Text(authPaper.TH_THEME)
+         }.foregroundColor(Color.gray)
+          .font(.system(size: 11))
+         Spacer()
+         HStack{
+          Text(authPaper.SLOT_VENUE1)
+          Spacer()
+          HStack{
+           Text(authPaper.SLOT_START)
+           Text("-")
+           Text(authPaper.SLOT_DATE)
+          }
+          Spacer()
+          Image(systemName: "heart")
+          Spacer()
+         }.foregroundColor(Color.red)
+          .font(.system(size: 11))
+         Spacer()
+        }
+        .background(Color(hue: 0.188, saturation: 0.202, brightness: 0.953))
+        .padding(3)
+       }
+       
       }
       Spacer()
-      
      }
     }
 }

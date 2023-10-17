@@ -63,60 +63,61 @@ struct scheduleStruct: Decodable {
      case AU_ID, AU_NAME, AU_ORGANIZATION, AU_WORKPROFILE, CMB_ID, EVT_COAUTHORS, EVT_ID, EVT_PAPER_EVENT_PAPERID, EVT_PAPER_ID, EVT_STATUS, EVT_TITLE, EVT_TYPE, SLOT_DATE, SLOT_DAY, SLOT_END, SLOT_ID, SLOT_START, SLOT_VENUE1, SLOT_VENUE2, SP_ID, SP_NAME, SP_ORGANIZATION, SP_WORKPROFILE, TH_ID, TH_THEME
  }
 }
+struct themeStruct: Decodable {
+    let CMB_ID: String
+    let TH_CODE: String
+    let TH_ID: String
+    let TH_STATUS: String
+    let TH_THEME: String
+    let TH_TYPE: String
+    let TH_VENUE: String
+ init(from decoder: Decoder) throws {
+     let container = try decoder.container(keyedBy: CodingKeys.self)
 
-//class DataManager: ObservableObject {
-//
-// static let shared = DataManager()
-//
-// @Published var ScheduleData: [scheduleStruct] = []
-//
-// private init() {
-//  self.fetchScheduleData()
-// }
-//
-// func fetchScheduleData() {
-//  guard let url = URL(string: "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/V_SCHEDULE.json") else {
-//   return
-//  }
-//  fetchjsonData(from: url) { (result: Result<[scheduleStruct], Error>) in
-//   switch result {
-//   case .success(let decodedData):
-//    DispatchQueue.main.async {
-//     self.ScheduleData = decodedData
-//    }
-//   case .failure(let error):
-//    print("Error fetching data: \(error)")
-//   }
-//  }
-// }
-//
-// func fetchjsonData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Error>) -> Void) {
-//
-//  URLSession.shared.dataTask(with: url) { data, response, error in
-//
-//   if let error = error {
-//    completion(.failure(error))
-//    return
-//   }
-//
-//   if let data = data {
-//    do {
-//     let decoder = JSONDecoder()
-//
-//     let decodedData = try decoder.decode(T.self, from: data)
-//     completion(.success(decodedData))
-//    } catch {
-//     completion(.failure(error))
-//    }
-//   }
-//   //     else {
-//   //      let error = NSError(domain: NSCocoaErrorDomain, code: 3, userInfo: [NSLocalizedDescriptionKey: "Data retrieval error"])
-//   //       completion(.failure(error))
-//   //         }
-//
-//  }.resume()
-// }
-//}
+  CMB_ID = try container.decodeIfPresent(String.self, forKey: .CMB_ID) ?? ""
+  TH_CODE = try container.decodeIfPresent(String.self, forKey: .TH_CODE) ?? ""
+  TH_ID = try container.decodeIfPresent(String.self, forKey: .TH_ID) ?? ""
+  TH_STATUS = try container.decodeIfPresent(String.self, forKey: .TH_STATUS) ?? ""
+  TH_THEME = try container.decodeIfPresent(String.self, forKey: .TH_THEME) ?? ""
+  TH_TYPE = try container.decodeIfPresent(String.self, forKey: .TH_TYPE) ?? ""
+  TH_VENUE = try container.decodeIfPresent(String.self, forKey: .TH_VENUE) ?? ""
+ }
+
+ // Define the CodingKeys enum to match your JSON keys
+ enum CodingKeys: String, CodingKey {
+     case CMB_ID, TH_CODE, TH_ID, TH_STATUS, TH_THEME, TH_TYPE, TH_VENUE
+ }
+}
+struct personsStruct: Decodable {
+    let CMB_ID: String
+    let PD_COUNTRY: String
+    let PD_EMAIL: String
+    let PD_NAME: String
+    let PD_ORGANIZATION: String
+    let PD_PHONE1: String
+    let PD_PTYPE: String
+    let PD_WORKPROFILE: String
+    let PD_BIO: String
+ 
+ init(from decoder: Decoder) throws {
+     let container = try decoder.container(keyedBy: CodingKeys.self)
+
+  CMB_ID = try container.decodeIfPresent(String.self, forKey: .CMB_ID) ?? ""
+  PD_COUNTRY = try container.decodeIfPresent(String.self, forKey: .PD_COUNTRY) ?? ""
+  PD_EMAIL = try container.decodeIfPresent(String.self, forKey: .PD_EMAIL) ?? ""
+  PD_NAME = try container.decodeIfPresent(String.self, forKey: .PD_NAME) ?? ""
+  PD_ORGANIZATION = try container.decodeIfPresent(String.self, forKey: .PD_ORGANIZATION) ?? ""
+  PD_PHONE1 = try container.decodeIfPresent(String.self, forKey: .PD_PHONE1) ?? ""
+  PD_PTYPE = try container.decodeIfPresent(String.self, forKey: .PD_PTYPE) ?? ""
+  PD_WORKPROFILE = try container.decodeIfPresent(String.self, forKey: .PD_WORKPROFILE) ?? ""
+  PD_BIO = try container.decodeIfPresent(String.self, forKey: .PD_BIO) ?? ""
+ }
+
+ // Define the CodingKeys enum to match your JSON keys
+ enum CodingKeys: String, CodingKey {
+     case CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE, PD_BIO
+ }
+}
 
 func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Error>) -> Void) {
  
@@ -137,19 +138,14 @@ func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Err
     completion(.failure(error))
    }
   }
-  //     else {
-  //      let error = NSError(domain: NSCocoaErrorDomain, code: 3, userInfo: [NSLocalizedDescriptionKey: "Data retrieval error"])
-  //       completion(.failure(error))
-  //         }
-  
  }.resume()
 }
 
 
 var scheduleData: [String: scheduleStruct] = [:]
 var scheduleDataArr: [scheduleStruct] = []
-//var scheduleDataDAY1: [scheduleStruct] = []
-//var scheduleDataDAY2: [scheduleStruct] = []
+var themesData: [themeStruct] = []
+var personsData: [personsStruct] = []
 //var scheduleDataDAY3: [scheduleStruct] = []
 func fetchScheduleJSONDataFromObj(from _url: String) {
  guard let url = URL(string: _url) else {
@@ -167,7 +163,6 @@ func fetchScheduleJSONDataFromObj(from _url: String) {
         }
     }
 }
-
 func fetchScheduleJSONData(from _url: String) {
  guard let url = URL(string: _url) else {
      return
@@ -183,15 +178,37 @@ func fetchScheduleJSONData(from _url: String) {
         }
     }
 }
+func fetchThemesJSONData(from _url: String) {
+ guard let url = URL(string: _url) else {
+     return
+ }
+ fetchData(from: url) { (result: Result<[themeStruct], Error>) in
+        switch result {
+        case .success(let decodedData):
+            DispatchQueue.main.async {
+             themesData = decodedData
+            }
+        case .failure(let error):
+            print("Error fetching data: \(error)")
+        }
+    }
+}
 
-//var groupedData = [String: [[String: String]]]() // Declare it as an instance property
-//
-//func _getDaywiseData() -> [String: [[String: String]]] { // Add the return type to the method
-// let groupedData = scheduleData.reduce(into: [String: [scheduleStruct]]()) { result, scheduleItem in
-//     result[scheduleItem.SLOT_DAY, default: []].append(scheduleItem)
-// }
-//
-//    return groupedData
-//}
+func fetchPersonsJSONData(from _url: String) {
+ guard let url = URL(string: _url) else {
+     return
+ }
+ fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+        switch result {
+        case .success(let decodedData):
+            DispatchQueue.main.async {
+             personsData = decodedData
+            }
+        case .failure(let error):
+            print("Error fetching data: \(error)")
+        }
+    }
+}
+
 
 

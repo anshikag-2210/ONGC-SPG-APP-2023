@@ -7,592 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2DE36A64-88CF-442D-8119-EF0FF10D0EB5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2DE36A64-88CF-442D-8119-EF0FF10D0EB5 - f46a9d52fda864da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPG_2023.tracksView.fetchJSONData() -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "348">
-               </Location>
-               <Location
-                  uuid = "2DE36A64-88CF-442D-8119-EF0FF10D0EB5 - 3217b89caad18b29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;SPG_2023.tracksStruct&gt;, Swift.Error&gt;) -&gt; () in SPG_2023.tracksView.fetchJSONData() -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "256">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "127EA313-030E-4D3F-BE1C-44F7120BA867"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "127EA313-030E-4D3F-BE1C-44F7120BA867 - b927b51c789354c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "6"
-                  endingLineNumber = "6"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "127EA313-030E-4D3F-BE1C-44F7120BA867 - 13f5604cedc0b502"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
-                  offsetFromSymbolStart = "320">
-               </Location>
-               <Location
-                  uuid = "127EA313-030E-4D3F-BE1C-44F7120BA867 - 13f5604cedc0b502"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
-                  offsetFromSymbolStart = "316">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FA16E509-5CBC-4F9F-8736-44869FD8ECAE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "FA16E509-5CBC-4F9F-8736-44869FD8ECAE - 13f5604cedc0b502"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
-                  offsetFromSymbolStart = "320">
-               </Location>
-               <Location
-                  uuid = "FA16E509-5CBC-4F9F-8736-44869FD8ECAE - 13f5604cedc0b502"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
-                  offsetFromSymbolStart = "316">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "978B949D-6F9B-42F8-B388-ED3579384F36"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "978B949D-6F9B-42F8-B388-ED3579384F36 - 13f5604cedc0b5a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "368">
-               </Location>
-               <Location
-                  uuid = "978B949D-6F9B-42F8-B388-ED3579384F36 - 13f5604cedc0b5a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "360">
-               </Location>
-               <Location
-                  uuid = "978B949D-6F9B-42F8-B388-ED3579384F36 - 13f5604cedc0b5a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "540">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A59176BF-2E5E-4E45-9584-EC4D813B48F2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "A59176BF-2E5E-4E45-9584-EC4D813B48F2 - 13f5604cedc0b732"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  uuid = "A59176BF-2E5E-4E45-9584-EC4D813B48F2 - b927b51c78935630"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "468">
-               </Location>
-               <Location
-                  uuid = "A59176BF-2E5E-4E45-9584-EC4D813B48F2 - 13f5604cedc0b7b6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "856">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DDA4BAF0-31D0-40D4-859C-6B6417B44FE4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "DDA4BAF0-31D0-40D4-859C-6B6417B44FE4 - 13f5604cedc0b7d3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "948">
-               </Location>
-               <Location
-                  uuid = "DDA4BAF0-31D0-40D4-859C-6B6417B44FE4 - b927b51c78935630"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "468">
-               </Location>
-               <Location
-                  uuid = "DDA4BAF0-31D0-40D4-859C-6B6417B44FE4 - 13f5604cedc0b7b6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "856">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5D2A84FD-7B62-4EBC-8747-D794531B29C7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E81A226-D514-4DD6-8A5B-E5BB73FD3DF1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5D40CC59-6A1E-4075-ABE2-56AAC15E2B26"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E8B99707-F845-4266-B8A0-97931E0C3076"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "E8B99707-F845-4266-B8A0-97931E0C3076 - 13f5604cedc0b42b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "1156">
-               </Location>
-               <Location
-                  uuid = "E8B99707-F845-4266-B8A0-97931E0C3076 - 13f5604cedc0b42b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "652">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "34AA0363-0350-437B-AAFB-9790B4DD8003"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "34AA0363-0350-437B-AAFB-9790B4DD8003 - 13f5604cedc0b4ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "1288">
-               </Location>
-               <Location
-                  uuid = "34AA0363-0350-437B-AAFB-9790B4DD8003 - 13f5604cedc0b4ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "1512">
-               </Location>
-               <Location
-                  uuid = "34AA0363-0350-437B-AAFB-9790B4DD8003 - 13f5604cedc0b4ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "784">
-               </Location>
-               <Location
-                  uuid = "34AA0363-0350-437B-AAFB-9790B4DD8003 - 13f5604cedc0b4ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPG_2023.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "1008">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2DC574C1-132B-4A74-A922-53B33929AD87"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2FEC82C3-FBAC-4DF1-9B23-C3819AB8CCA7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "fetchJSONData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2FEC82C3-FBAC-4DF1-9B23-C3819AB8CCA7 - 3217b89caad18b8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;SPG_2023.tracksStruct&gt;, Swift.Error&gt;) -&gt; () in SPG_2023.tracksView.fetchJSONData() -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "668">
-               </Location>
-               <Location
-                  uuid = "2FEC82C3-FBAC-4DF1-9B23-C3819AB8CCA7 - 3217b89caad18b8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;SPG_2023.tracksStruct&gt;, Swift.Error&gt;) -&gt; () in SPG_2023.tracksView.fetchJSONData() -&gt; ()"
-                  moduleName = "SPG 2023"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "772">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DFA58007-D54B-4B46-8646-9DB835992ABF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -600,8 +14,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "fetchScheduleJSONData(from:)"
             landmarkType = "9">
             <Locations>
@@ -648,8 +62,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "fetchScheduleJSONData(from:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -664,8 +78,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "fetchScheduleJSONData(from:)"
             landmarkType = "9">
             <Locations>
@@ -712,8 +126,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "fetchScheduleJSONData(from:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -722,22 +136,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DCCD6407-120B-4D91-AFA3-E0729E86EA75"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "fetchData(from:completion:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "580FF347-E1DC-4983-A4FB-65FAE172B7D1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -753,6 +151,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "580FF347-E1DC-4983-A4FB-65FAE172B7D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "fetchData(from:completion:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "3E9B55AD-8B4C-47BE-AC14-2D4C457CCBCA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -760,8 +174,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
             <Locations>
@@ -808,8 +222,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -824,8 +238,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -840,8 +254,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -856,8 +270,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/ScheduleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -994,8 +408,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/ScheduleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1102,8 +516,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/ScheduleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1158,24 +572,56 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0F679E8B-4F90-4AEA-9628-5E6491ADE77E"
+            uuid = "AB919502-33FE-4359-BC5D-B450E2418434"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/ScheduleView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C60B834-25E1-4254-AF0C-4916CF6EAE82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/ScheduleView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D63A3127-6384-4687-ADD5-AB3AFB75A816"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SPEG-NOV-2023/SPG-2023/ScheduleDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "0F679E8B-4F90-4AEA-9628-5E6491ADE77E - c908192d4f5f0263"
+                  uuid = "D63A3127-6384-4687-ADD5-AB3AFB75A816 - 2ff3f2808ac234fa"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SPG_2023.ScheduleDetailsView.body.getter : some"
+                  symbolName = "closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0&gt;&gt; in SPG_2023.ScheduleDetailsView.body.getter : some"
                   moduleName = "SPG 2023"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/ScheduleDetailsView.swift"
@@ -1183,14 +629,14 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
-                  offsetFromSymbolStart = "312">
+                  offsetFromSymbolStart = "132">
                </Location>
                <Location
-                  uuid = "0F679E8B-4F90-4AEA-9628-5E6491ADE77E - b79e5ea54162567f"
+                  uuid = "D63A3127-6384-4687-ADD5-AB3AFB75A816 - b9347bec9d93d649"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (inout Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.scheduleStruct&gt;&gt;, SPG_2023.scheduleStruct) -&gt; () in SPG_2023.ScheduleDetailsView.body.getter : some"
+                  symbolName = "closure #1 (SPG_2023.scheduleStruct) -&gt; &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0&gt;&gt; in SPG_2023.ScheduleDetailsView.body.getter : some"
                   moduleName = "SPG 2023"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/ScheduleDetailsView.swift"
@@ -1198,7 +644,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
                   endingLineNumber = "21"
-                  offsetFromSymbolStart = "732">
+                  offsetFromSymbolStart = "80">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1206,17 +652,788 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "35728E18-6691-4888-B74A-D04362A1A956"
+            uuid = "F645D17C-2060-4A46-9A3D-1431176B0CA3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SPEG-NOV-2023/SPG-2023/ScheduleDetailsView.swift"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F645D17C-2060-4A46-9A3D-1431176B0CA3 - 573697f3a01491bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1000">
+               </Location>
+               <Location
+                  uuid = "F645D17C-2060-4A46-9A3D-1431176B0CA3 - c8453c8c027032e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SPG_2023.scheduleStruct) -&gt; Swift.Bool in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64395FC8-2D3D-4AAF-900D-3F5F05BA6C83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "64395FC8-2D3D-4AAF-900D-3F5F05BA6C83 - 573697f3a01492e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+               <Location
+                  uuid = "64395FC8-2D3D-4AAF-900D-3F5F05BA6C83 - 573697f3a01492e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #1 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - 573697f3a01492c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1284">
+               </Location>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - ccbcf08fce7a2953"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SPG_2023.scheduleStruct) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - 2a8a956fea6e96c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1284">
+               </Location>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - fbd5387765ca4385"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SPG_2023.scheduleStruct) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - 573697f3a01492c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #1 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1284">
+               </Location>
+               <Location
+                  uuid = "723F0162-3BAC-45E7-AC04-7062FFBCD08E - ccbcf08fce7a2953"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SPG_2023.scheduleStruct) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #1 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 5cd9006c3e2ff08d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 5a2eba0529f19141"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 62aeb8c15b8e1ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 371b20c5f842490e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 72214149e677aa82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "48E35905-6768-4A20-8081-AAD0DE2F08AA - 7b12705b614e3746"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E78A4F10-16BE-4F4C-A748-DF3459014EDD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E78A4F10-16BE-4F4C-A748-DF3459014EDD - 573697f3a01491da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "E78A4F10-16BE-4F4C-A748-DF3459014EDD - 573697f3a01491da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1788">
+               </Location>
+               <Location
+                  uuid = "E78A4F10-16BE-4F4C-A748-DF3459014EDD - 2a8a956fea6e95d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "E78A4F10-16BE-4F4C-A748-DF3459014EDD - 2a8a956fea6e95d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #2 (Swift.String) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in closure #2 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SPG_2023.scheduleStruct&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, SPG_2023.ScheduleDetailsView&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt;&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1788">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68088081-D68C-44FC-9964-76705394C670"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "68088081-D68C-44FC-9964-76705394C670 - b103be2c3aa39a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "68088081-D68C-44FC-9964-76705394C670 - 2c02b4c879200baf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 ((key: Swift.String, value: Swift.Array&lt;SPG_2023.themeStruct&gt;)) -&gt; Swift.String in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59CDCDA8-2B2E-4C17-8402-4D3D666DB2E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D47BC1A-7F72-44AB-94F1-D435F18E6CB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0D47BC1A-7F72-44AB-94F1-D435F18E6CB9 - ca9a015b0941bf5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1456">
+               </Location>
+               <Location
+                  uuid = "0D47BC1A-7F72-44AB-94F1-D435F18E6CB9 - 889d532cd10879a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 ((key: Swift.String, value: Swift.Array&lt;SPG_2023.scheduleStruct&gt;)) -&gt; Swift.String in closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B9BF3F9-5F8C-4D6B-A7C4-10B751CD2192"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5B9BF3F9-5F8C-4D6B-A7C4-10B751CD2192 - ca9a015b0941bef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1656">
+               </Location>
+               <Location
+                  uuid = "5B9BF3F9-5F8C-4D6B-A7C4-10B751CD2192 - d7d8ebc61238ac8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (Swift.String) -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41BE7AA8-3935-4860-B6D0-7F5714EB5AC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/tracksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "41BE7AA8-3935-4860-B6D0-7F5714EB5AC0 - ca9a015b0941bda9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "41BE7AA8-3935-4860-B6D0-7F5714EB5AC0 - 59f29660659740ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt; in closure #1 (Swift.String) -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, Swift.Optional&lt;Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;&gt;&gt;, SwiftUI.Spacer)&gt;&gt; in SPG_2023.tracksView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/tracksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5E63C85-DDD2-4243-89C3-26A8FF8B7734"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C5E63C85-DDD2-4243-89C3-26A8FF8B7734 - 44ffab56dcd3699b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "C5E63C85-DDD2-4243-89C3-26A8FF8B7734 - 4d3b7cd4bb618b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SPG_2023.personsStruct) -&gt; &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0 in SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "C5E63C85-DDD2-4243-89C3-26A8FF8B7734 - 44ffab56dcd3699b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "C5E63C85-DDD2-4243-89C3-26A8FF8B7734 - 44ffab56dcd3699b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C616D18-122C-4279-BF78-F9C1995982E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "keynoteSpeakersView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4C616D18-122C-4279-BF78-F9C1995982E4 - 71c103b53fec789e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.personsStruct&gt;&gt;, SPG_2023.personsStruct) -&gt; () in variable initialization expression of SPG_2023.keynoteSpeakersView.personsGroupedData : Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.personsStruct&gt;&gt;"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "4C616D18-122C-4279-BF78-F9C1995982E4 - bc7e7cd04354a4c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.keynoteSpeakersView.init() -&gt; SPG_2023.keynoteSpeakersView"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37D37175-672A-4782-AADC-8F34211F2316"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "37D37175-672A-4782-AADC-8F34211F2316 - 71c103b53fec78bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.personsStruct&gt;&gt;, SPG_2023.personsStruct) -&gt; () in variable initialization expression of SPG_2023.keynoteSpeakersView.personsGroupedData : Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.personsStruct&gt;&gt;"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "37D37175-672A-4782-AADC-8F34211F2316 - 44ffab56dcd36836"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "37D37175-672A-4782-AADC-8F34211F2316 - 53eef74879ee1d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.Dictionary&lt;Swift.String, Swift.Array&lt;SPG_2023.personsStruct&gt;&gt;, SPG_2023.personsStruct) -&gt; () in SPG_2023.keynoteSpeakersView.body.getter : some"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/keynoteSpeakersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

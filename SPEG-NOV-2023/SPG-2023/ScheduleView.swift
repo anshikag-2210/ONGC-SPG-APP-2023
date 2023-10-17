@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ScheduleView: View {
  @State private var selectedTab = 0
- @State var _url = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/V_SCHEDULE.json"
     var body: some View {
+     let groupedData = scheduleDataArr.reduce(into: [String: [scheduleStruct]]()) { result, scheduleItem in
+      result[scheduleItem.SLOT_DAY, default: []].append(scheduleItem)
+     }
      VStack{
 
       VStack {
@@ -24,12 +26,52 @@ struct ScheduleView: View {
 //          .colorInvert()
           .foregroundColor(.white)
           .background(Color.green)
-       ScheduleDetailsView (day: selectedTab + 1)
-              .padding()
+       if(selectedTab == 1){
+        if let dayData = groupedData["DAY 2"] {
+         ScheduleDetailsView (dayData: dayData)
+        }
+       }
+       else if(selectedTab == 2){
+        if let dayData = groupedData["DAY 3"] {
+         ScheduleDetailsView (dayData: dayData)
+        }
+       }
+       else{
+        if let dayData = groupedData["DAY 1"] {
+         ScheduleDetailsView (dayData: dayData)
+        }
+       }
+//       ScheduleDetailsView (day: selectedTab + 1)
       }
-
+//      .padding()
       Spacer()
-//      VStack{
+     }
+//     .onAppear{
+//      fetchScheduleJSONData(from: _url)
+//     }
+    }
+}
+
+struct DayView: View {
+    let day: Int
+    
+    var body: some View {
+     VStack{
+//       NavigationLink("", destination: ScheduleDetailsView(day: day))
+     }
+    }
+}
+
+struct ScheduleView_Previews: PreviewProvider {
+    static var previews: some View {
+     VStack{
+      
+     }
+    // ScheduleDetailsView(day: 1)
+    }
+}
+
+// extra code //      VStack{
 //       TabView(selection: $selectedTab){
 //        ScheduleDetailsView(day: 1)
 //         .tabItem {
@@ -48,25 +90,3 @@ struct ScheduleView: View {
 // //      NavigationLink("", destination: ScheduleDetailsView(day: selectedTab + 1), isActive: .constant(selectedTab != 0))
 //
 //      }
-     }
-     .onAppear{
-      fetchScheduleJSONData(from: _url)
-     }
-    }
-}
-
-struct DayView: View {
-    let day: Int
-    
-    var body: some View {
-     VStack{
-//       NavigationLink("", destination: ScheduleDetailsView(day: day))
-     }
-    }
-}
-
-struct ScheduleView_Previews: PreviewProvider {
-    static var previews: some View {
-     ScheduleDetailsView(day: 1)
-    }
-}

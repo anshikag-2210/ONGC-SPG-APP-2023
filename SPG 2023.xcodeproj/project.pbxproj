@@ -43,6 +43,10 @@
 		5EB9671F2AD4177B0003B2FD /* CECourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB9671E2AD4177B0003B2FD /* CECourseDetailView.swift */; };
 		5EB967212AD556C90003B2FD /* NavigationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB967202AD556C90003B2FD /* NavigationModifiers.swift */; };
 		5EB967232AD564EE0003B2FD /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB967222AD564EE0003B2FD /* Test.swift */; };
+		5ED7DA3B2ADD4BF4004D9974 /* tracksDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA3A2ADD4BF4004D9974 /* tracksDetailView.swift */; };
+		5ED7DA3D2ADD58D2004D9974 /* keynoteSpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */; };
+		5ED7DA3F2ADD5CA3004D9974 /* KeyNoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */; };
+		5ED7DA412ADD6619004D9974 /* sponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA402ADD6619004D9974 /* sponsorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,10 @@
 		5EB9671E2AD4177B0003B2FD /* CECourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CECourseDetailView.swift; sourceTree = "<group>"; };
 		5EB967202AD556C90003B2FD /* NavigationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifiers.swift; sourceTree = "<group>"; };
 		5EB967222AD564EE0003B2FD /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		5ED7DA3A2ADD4BF4004D9974 /* tracksDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracksDetailView.swift; sourceTree = "<group>"; };
+		5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keynoteSpeakersView.swift; sourceTree = "<group>"; };
+		5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNoteDetailView.swift; sourceTree = "<group>"; };
+		5ED7DA402ADD6619004D9974 /* sponsorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sponsorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,10 @@
 				5E3D3BFF2AD7F54200D6E249 /* ScheduleDetailsView.swift */,
 				5E3D3C012AD7FF7000D6E249 /* taskSummaryView.swift */,
 				5E3D3C032AD809E100D6E249 /* firebaseDB.swift */,
+				5ED7DA3A2ADD4BF4004D9974 /* tracksDetailView.swift */,
+				5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */,
+				5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */,
+				5ED7DA402ADD6619004D9974 /* sponsorsView.swift */,
 			);
 			path = "SPG-2023";
 			sourceTree = "<group>";
@@ -373,7 +385,9 @@
 				5EB967232AD564EE0003B2FD /* Test.swift in Sources */,
 				5E4970E22ACD46ED003870AC /* Persistence.swift in Sources */,
 				5E2149EE2AD6BBF300BB0CCD /* programView.swift in Sources */,
+				5ED7DA3B2ADD4BF4004D9974 /* tracksDetailView.swift in Sources */,
 				5E3D3C002AD7F54200D6E249 /* ScheduleDetailsView.swift in Sources */,
+				5ED7DA412ADD6619004D9974 /* sponsorsView.swift in Sources */,
 				5E3D3C022AD7FF7000D6E249 /* taskSummaryView.swift in Sources */,
 				5E22F74C2AD7BD7400207F8A /* splashView.swift in Sources */,
 				5EB9671F2AD4177B0003B2FD /* CECourseDetailView.swift in Sources */,
@@ -390,9 +404,11 @@
 				5E4869D52ACFCC5800435ED8 /* CECourseView.swift in Sources */,
 				5E4970D92ACD46EC003870AC /* SPEG_NOV_2023App.swift in Sources */,
 				5E2149F42AD6D88500BB0CCD /* ExhibitionView.swift in Sources */,
+				5ED7DA3D2ADD58D2004D9974 /* keynoteSpeakersView.swift in Sources */,
 				5E3D3C042AD809E100D6E249 /* firebaseDB.swift in Sources */,
 				5E49710B2ACE8243003870AC /* ExtraCode.swift in Sources */,
 				5E4869DD2ACFEC0400435ED8 /* NavigateView.swift in Sources */,
+				5ED7DA3F2ADD5CA3004D9974 /* KeyNoteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

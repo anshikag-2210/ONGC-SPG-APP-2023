@@ -10,48 +10,58 @@ import SwiftUI
 struct taskSummaryView: View {
  @State var event: scheduleStruct
     var body: some View {
-     List{
+     ScrollView{
       VStack(alignment: .leading){
        HStack{
         Text(event.EVT_PAPER_EVENT_PAPERID)
-         .fontWeight(.bold)
-        Text("(")
-        Text(event.EVT_TYPE)
-         .fontWeight(.bold)
-        Text(")")
-       }.foregroundColor(Color.green)
-        .font(.system(size: 13))
-       
-       Text(event.EVT_TITLE).foregroundColor(Color.green)
-        .font(.system(size: 12))
-       HStack{
-        Text("Session: ").bold()
-        Text(event.TH_THEME)
-       }.foregroundColor(Color.gray)
-        .font(.system(size: 11))
-       
-       HStack{
-        Text("Author: ").bold()
-        Text(event.AU_NAME)
-       }.foregroundColor(Color.gray)
-        .font(.system(size: 11))
-       HStack{
-        Text(event.SLOT_VENUE1)
-        Spacer()
-        HStack{
-         Text(event.SLOT_START)
-         Text("-")
-         Text(event.SLOT_DATE)
-        }
+         .fontWeight(.bold).foregroundColor(Color.green)
         Spacer()
         Image(systemName: "heart")
-        Spacer()
-       }.foregroundColor(Color.red)
+        .foregroundColor(Color.red)
         .font(.system(size: 11))
+       }
+       .padding(1)
+       Group{
+        Text("Title").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.EVT_TITLE)
+        Spacer()
+       }
+       Group{
+        Text("Session").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.TH_THEME)
+        Spacer()
+       }
+       Group{
+        Text("Author").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.AU_NAME)
+        Spacer()
+       }
+       Group{
+        Text("Co-Authors").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.EVT_COAUTHORS)
+        Spacer()
+       }
+       Group{
+        Text("Presenting Author").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.AU_NAME)
+        Spacer()
+       }
+       Group{
+        Text("Brief").fontWeight(.bold).foregroundColor(Color.green)
+        Divider()
+        Text(event.TH_THEME)
+        Spacer()
+       }
       }
-      .background(Color(hue: 0.188, saturation: 0.202, brightness: 0.953))
+      .padding()
+    //  Spacer()
      }
-     .listStyle(PlainListStyle())
+     Spacer()
     }
 }
 

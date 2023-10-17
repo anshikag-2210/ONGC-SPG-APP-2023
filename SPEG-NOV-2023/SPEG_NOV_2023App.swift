@@ -9,7 +9,6 @@ import SwiftUI
 @main
 struct SPEG_NOV_2023App: App {
     let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
          home()

@@ -12,6 +12,9 @@ import SwiftUI
 import WebKit
 
 struct home: View {
+ @State var _Scheduleurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/V_SCHEDULE.json"
+ @State var _themesurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/THEMES.json"
+ @State var _personsurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/PERSONS.json"
  @State private var isDetailViewActive = false
  @State private var show: Int = -1
  @State private var showSheet: Bool = false
@@ -72,7 +75,7 @@ struct home: View {
        Spacer()
        HStack{
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: keynoteSpeakersView()){
          VStack{
            Image(systemName: "pencil.circle.fill")
             .resizable()
@@ -131,7 +134,7 @@ struct home: View {
          }
         }
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: sponsorsView()){
          VStack{
            Image(systemName: "figure.2.and.child.holdinghands")
             .resizable()
@@ -218,7 +221,7 @@ struct home: View {
         Spacer()
        }
        }
-    .navigationBarTitle("Home", displayMode: .large)
+//    .navigationBarTitle("Home", displayMode: .large)
 //      .onTapGesture {
 //       self.isDetailViewActive = true
 //   }
@@ -262,6 +265,11 @@ struct home: View {
               }
           }
       )
+  .onAppear{
+    fetchScheduleJSONData(from: _Scheduleurl)
+    fetchThemesJSONData(from: _themesurl)
+    fetchPersonsJSONData(from: _personsurl)
+  }
  }
 }
 
