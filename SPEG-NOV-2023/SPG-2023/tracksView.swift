@@ -39,7 +39,7 @@ var body: some View {
              .padding()
              Spacer()
       } .background(Color(hue: 0.437, saturation: 0.054, brightness: 0.986))
-        .padding(5)
+//        .padding(5)
      }
     }
   }
@@ -82,6 +82,8 @@ var body: some View {
   }
 // }
  }
+ .navigationBarItems(leading: HeaderView(header: "Tracks"))
+ footerView()
 }
 }
 
@@ -92,6 +94,5 @@ struct tracks_Previews: PreviewProvider {
      }//     tracksView(showSheet: .constant(false))
     }
 }
-
 
 

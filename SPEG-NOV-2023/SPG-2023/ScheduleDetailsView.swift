@@ -193,6 +193,8 @@ struct ScheduleDetailsView: View {
 //     }
 //    }
    }
+//  .navigationBarItems(leading: HeaderView(header: "Schedule"))
+//  footerView()
 //  }
  }
   //     Text("Detailed View for Day \(day)")

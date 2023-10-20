@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct authorsDetailView: View {
- @State var author: AuthorsStruct
+ @State var author: personsStruct
+ @State private var isFavorited = false
+ @State private var imageName = "heart"
     var body: some View {
-
      VStack{
       Image("author1")
        .clipShape(Circle())
@@ -61,7 +62,14 @@ struct authorsDetailView: View {
            Text(authPaper.SLOT_DATE)
           }
           Spacer()
-          Image(systemName: "heart")
+//          Image(systemName: "heart")
+          Image(systemName: imageName)
+              .onTapGesture {
+               addFavourites(from: authPaper.CMB_ID)
+                  isFavorited.toggle()
+                  imageName = isFavorited ? "heart.fill" : "heart"
+              }
+
           Spacer()
          }.foregroundColor(Color.red)
           .font(.system(size: 11))
@@ -74,6 +82,8 @@ struct authorsDetailView: View {
       }
       Spacer()
      }
+     .navigationBarItems(leading: HeaderView(header: "Authors"))
+     footerView()
     }
 }
 

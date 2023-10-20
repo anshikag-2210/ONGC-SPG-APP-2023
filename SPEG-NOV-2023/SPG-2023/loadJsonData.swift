@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import CoreData
 
 struct scheduleStruct: Decodable {
     let AU_ID: String
@@ -63,7 +64,7 @@ struct scheduleStruct: Decodable {
      case AU_ID, AU_NAME, AU_ORGANIZATION, AU_WORKPROFILE, CMB_ID, EVT_COAUTHORS, EVT_ID, EVT_PAPER_EVENT_PAPERID, EVT_PAPER_ID, EVT_STATUS, EVT_TITLE, EVT_TYPE, SLOT_DATE, SLOT_DAY, SLOT_END, SLOT_ID, SLOT_START, SLOT_VENUE1, SLOT_VENUE2, SP_ID, SP_NAME, SP_ORGANIZATION, SP_WORKPROFILE, TH_ID, TH_THEME
  }
 }
-struct themeStruct: Decodable {
+struct themeStruct: Codable {
     let CMB_ID: String
     let TH_CODE: String
     let TH_ID: String
@@ -88,7 +89,7 @@ struct themeStruct: Decodable {
      case CMB_ID, TH_CODE, TH_ID, TH_STATUS, TH_THEME, TH_TYPE, TH_VENUE
  }
 }
-struct personsStruct: Decodable {
+struct personsStruct: Codable {
     let CMB_ID: String
     let PD_COUNTRY: String
     let PD_EMAIL: String
@@ -118,6 +119,106 @@ struct personsStruct: Decodable {
      case CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE, PD_BIO
  }
 }
+struct galleryStruct: Decodable {
+    let CMB_ID: String
+    let IM_CATEGORY: String
+    let IM_DATE: String
+    let IM_DESC: String
+    let IM_ID: String
+    let IM_PATH: String
+ init(from decoder: Decoder) throws {
+     let container = try decoder.container(keyedBy: CodingKeys.self)
+
+  CMB_ID = try container.decodeIfPresent(String.self, forKey: .CMB_ID) ?? ""
+  IM_CATEGORY = try container.decodeIfPresent(String.self, forKey: .IM_CATEGORY) ?? ""
+  IM_DATE = try container.decodeIfPresent(String.self, forKey: .IM_DATE) ?? ""
+  IM_DESC = try container.decodeIfPresent(String.self, forKey: .IM_DESC) ?? ""
+  IM_ID = try container.decodeIfPresent(String.self, forKey: .IM_ID) ?? ""
+  IM_PATH = try container.decodeIfPresent(String.self, forKey: .IM_PATH) ?? ""
+ }
+
+ // Define the CodingKeys enum to match your JSON keys
+ enum CodingKeys: String, CodingKey {
+     case CMB_ID, IM_CATEGORY, IM_DATE, IM_DESC, IM_ID, IM_PATH
+ }
+}
+
+struct organizationsStruct: Decodable {
+    let CMB_ID: String
+    let OS_BOOTHS: String
+    let OS_NAME: String
+    let OS_QUANTUM: String
+    let OS_SUBTYPE: String
+    let OS_TYPE: String
+    let OS_WEBSITE: String
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        if let intCMB_ID = try? container.decode(Int.self, forKey: .CMB_ID) {
+            CMB_ID = String(intCMB_ID)
+        } else if let stringCMB_ID = try? container.decode(String.self, forKey: .CMB_ID) {
+            CMB_ID = stringCMB_ID
+        } else {
+            CMB_ID = ""
+        }
+
+        if let intQuantum = try? container.decode(Int.self, forKey: .OS_QUANTUM) {
+            OS_QUANTUM = String(intQuantum)
+        } else if let stringQuantum = try? container.decode(String.self, forKey: .OS_QUANTUM) {
+            OS_QUANTUM = stringQuantum
+        } else {
+            OS_QUANTUM = ""
+        }
+
+        if let intBooths = try? container.decode(Int.self, forKey: .OS_BOOTHS) {
+            OS_BOOTHS = String(intBooths)
+        } else if let stringBooths = try? container.decode(String.self, forKey: .OS_BOOTHS) {
+            OS_BOOTHS = stringBooths
+        } else {
+            OS_BOOTHS = ""
+        }
+
+        OS_NAME = try container.decodeIfPresent(String.self, forKey: .OS_NAME) ?? ""
+        OS_SUBTYPE = try container.decodeIfPresent(String.self, forKey: .OS_SUBTYPE) ?? ""
+        OS_TYPE = try container.decodeIfPresent(String.self, forKey: .OS_TYPE) ?? ""
+        OS_WEBSITE = try container.decodeIfPresent(String.self, forKey: .OS_WEBSITE) ?? ""
+    }
+
+    // Define the CodingKeys enum to match your JSON keys
+    enum CodingKeys: String, CodingKey {
+        case CMB_ID, OS_BOOTHS, OS_NAME, OS_QUANTUM, OS_SUBTYPE, OS_TYPE, OS_WEBSITE
+    }
+}
+
+
+struct sponsorsStruct: Decodable {
+    let CMB_ID: Int
+    let OS_BOOTHS: String // Use Any type to accommodate both Int and String
+    let OS_NAME: String
+    let OS_QUANTUM: Int
+    let OS_SUBTYPE: String
+    let OS_TYPE: String
+    let OS_WEBSITE: String
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        CMB_ID = try container.decodeIfPresent(Int.self, forKey: .CMB_ID) ?? 0
+     OS_NAME = try container.decodeIfPresent(String.self, forKey: .OS_NAME) ?? ""
+     OS_BOOTHS = try container.decodeIfPresent(String.self, forKey: .OS_BOOTHS) ?? ""
+        OS_QUANTUM = try container.decodeIfPresent(Int.self, forKey: .OS_QUANTUM) ?? 0
+        OS_SUBTYPE = try container.decodeIfPresent(String.self, forKey: .OS_SUBTYPE) ?? ""
+        OS_TYPE = try container.decodeIfPresent(String.self, forKey: .OS_TYPE) ?? ""
+        OS_WEBSITE = try container.decodeIfPresent(String.self, forKey: .OS_WEBSITE) ?? ""
+    }
+
+    // Define the CodingKeys enum to match your JSON keys
+    enum CodingKeys: String, CodingKey {
+        case CMB_ID, OS_BOOTHS, OS_NAME, OS_QUANTUM, OS_SUBTYPE, OS_TYPE, OS_WEBSITE
+    }
+}
+
 
 func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Error>) -> Void) {
  
@@ -146,7 +247,9 @@ var scheduleData: [String: scheduleStruct] = [:]
 var scheduleDataArr: [scheduleStruct] = []
 var themesData: [themeStruct] = []
 var personsData: [personsStruct] = []
-//var scheduleDataDAY3: [scheduleStruct] = []
+var galleryData: [galleryStruct] = []
+var organizationsData: [organizationsStruct] = []
+
 func fetchScheduleJSONDataFromObj(from _url: String) {
  guard let url = URL(string: _url) else {
   scheduleData = [:]
@@ -163,6 +266,7 @@ func fetchScheduleJSONDataFromObj(from _url: String) {
         }
     }
 }
+
 func fetchScheduleJSONData(from _url: String) {
  guard let url = URL(string: _url) else {
      return
@@ -193,16 +297,42 @@ func fetchThemesJSONData(from _url: String) {
         }
     }
 }
-
 func fetchPersonsJSONData(from _url: String) {
- guard let url = URL(string: _url) else {
-     return
- }
- fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+    // First, try to load data from the local file
+    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+        if let loadedData = try? Data(contentsOf: fileURL) {
+            do {
+                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
+                // Use your loadedArray as needed
+                personsData = loadedArray
+            } catch {
+                print("Error decoding local data: \(error)")
+            }
+        }
+    }
+
+    // Fetch data from the internet
+    guard let url = URL(string: _url) else {
+        return
+    }
+
+    fetchData(from: url) { (result: Result<[personsStruct], Error>) in
         switch result {
         case .success(let decodedData):
-            DispatchQueue.main.async {
-             personsData = decodedData
+            // Update local data with data from the internet
+            personsData = decodedData
+
+            // Save the updated data to the local JSON file
+            if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+                do {
+                    let jsonData = try JSONEncoder().encode(decodedData)
+                    try jsonData.write(to: fileURL)
+                    print("Data saved to file: \(fileURL)")
+                } catch {
+                    print("Error saving data to file: \(error)")
+                }
             }
         case .failure(let error):
             print("Error fetching data: \(error)")
@@ -211,4 +341,63 @@ func fetchPersonsJSONData(from _url: String) {
 }
 
 
+//func fetchPersonsJSONData(from _url: String) {
+// guard let url = URL(string: _url) else {
+//     return
+// }
+// fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+//        switch result {
+//        case .success(let decodedData):
+//            DispatchQueue.main.async {
+//             personsData = decodedData
+//            }
+//        case .failure(let error):
+//            print("Error fetching data: \(error)")
+//        }
+//    }
+//}
+
+func fetchGallerydata(from _url: String) {
+ guard let url = URL(string: _url) else {
+     return
+ }
+ fetchData(from: url) { (result: Result<[galleryStruct], Error>) in
+        switch result {
+        case .success(let decodedData):
+            DispatchQueue.main.async {
+             galleryData = decodedData
+            }
+        case .failure(let error):
+            print("Error fetching data: \(error)")
+        }
+    }
+}
+func fetchOrgdata(from _url: String) {
+ guard let url = URL(string: _url) else {
+     return
+ }
+ fetchData(from: url) { (result: Result<[organizationsStruct], Error>) in
+        switch result {
+        case .success(let decodedData):
+            DispatchQueue.main.async {
+             organizationsData = decodedData
+            }
+        case .failure(let error):
+            print("Error fetching data: \(error)")
+        }
+    }
+}
+
+func addFavourites(from cbmId: String){
+ do{
+  let context = CoreDataManager.shared.managedObjectContext
+  let fav = FAVOURITES(context: context)
+  fav.id = .init()
+  fav.cmb_id = cbmId
+  CoreDataManager.shared.saveContext()
+ }
+ catch{
+  print(error.localizedDescription )
+ }
+}
 

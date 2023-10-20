@@ -14,7 +14,6 @@ struct ScheduleView: View {
       result[scheduleItem.SLOT_DAY, default: []].append(scheduleItem)
      }
      VStack{
-
       VStack {
           Picker("", selection: $selectedTab) {
               Text("Day 1").tag(0)
@@ -46,9 +45,8 @@ struct ScheduleView: View {
 //      .padding()
       Spacer()
      }
-//     .onAppear{
-//      fetchScheduleJSONData(from: _url)
-//     }
+     .navigationBarItems(leading: HeaderView(header: "Schedule"))
+     footerView()
     }
 }
 

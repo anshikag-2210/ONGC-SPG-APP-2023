@@ -80,6 +80,9 @@ struct KeyNoteDetailView: View {
    }
     Spacer()
   }
+   .navigationBarItems(leading: HeaderView(header: "Key Note Speakers"))
+   footerView()
+
 // }
 }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E252" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FAVOURITES" representedClassName="FAVOURITES" syncable="YES" codeGenerationType="class">
+        <attribute name="cmb_id" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="PERSONS" representedClassName="PERSONS" syncable="YES" codeGenerationType="class">
+        <attribute name="cmb_id" optional="YES" attributeType="String"/>
+        <attribute name="pd_bio" optional="YES" attributeType="String"/>
+        <attribute name="pd_country" optional="YES" attributeType="String"/>
+        <attribute name="pd_email" optional="YES" attributeType="String"/>
+        <attribute name="pd_name" optional="YES" attributeType="String"/>
+        <attribute name="pd_organization" optional="YES" attributeType="String"/>
+        <attribute name="pd_phone1" optional="YES" attributeType="String"/>
+        <attribute name="pd_ptype" optional="YES" attributeType="String"/>
+        <attribute name="pd_workprofile" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SCHEDULE" representedClassName="SCHEDULE" syncable="YES" codeGenerationType="class">
+        <attribute name="au_id" optional="YES" attributeType="String"/>
+        <attribute name="au_name" optional="YES" attributeType="String"/>
+        <attribute name="au_organization" optional="YES" attributeType="String"/>
+        <attribute name="au_workprofile" optional="YES" attributeType="String"/>
+        <attribute name="cmb_id" optional="YES" attributeType="String"/>
+        <attribute name="evt_coauthors" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SPONSORS" representedClassName="SPONSORS" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="os_type" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+</model>

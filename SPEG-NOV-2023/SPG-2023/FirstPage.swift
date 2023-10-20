@@ -39,7 +39,7 @@ struct FirstPage: View {
     }
     Spacer()
     VStack{
-     Text("Footer")
+    // Text("Footer")
     }
    }
   }

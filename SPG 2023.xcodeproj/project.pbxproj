@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5916B947DF0CDA5097EF4393 /* Pods_SPG_2023Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */; };
 		5E2149EC2AD6B84700BB0CCD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149EB2AD6B84700BB0CCD /* RegistrationView.swift */; };
 		5E2149EE2AD6BBF300BB0CCD /* programView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149ED2AD6BBF300BB0CCD /* programView.swift */; };
 		5E2149F22AD6D87500BB0CCD /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149F12AD6D87500BB0CCD /* ConferenceView.swift */; };
@@ -47,6 +48,17 @@
 		5ED7DA3D2ADD58D2004D9974 /* keynoteSpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */; };
 		5ED7DA3F2ADD5CA3004D9974 /* KeyNoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */; };
 		5ED7DA412ADD6619004D9974 /* sponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA402ADD6619004D9974 /* sponsorsView.swift */; };
+		5ED7DA442ADE53A2004D9974 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA422ADE53A2004D9974 /* Model.xcdatamodeld */; };
+		5ED7DA472ADE5C8E004D9974 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA462ADE5C8E004D9974 /* CoreDataStack.swift */; };
+		5ED7DA492ADE622A004D9974 /* favouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DA482ADE622A004D9974 /* favouritesView.swift */; };
+		5ED7DAC52ADEACF8004D9974 /* galleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DAC42ADEACF8004D9974 /* galleryView.swift */; };
+		5ED7DAC72ADEBA8E004D9974 /* saveToLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DAC62ADEBA8E004D9974 /* saveToLocal.swift */; };
+		5ED7DAC92ADFE840004D9974 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DAC82ADFE840004D9974 /* HeaderView.swift */; };
+		5ED7DACB2ADFEBB6004D9974 /* footerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACA2ADFEBB6004D9974 /* footerView.swift */; };
+		5ED7DACD2AE00AC0004D9974 /* contactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACC2AE00AC0004D9974 /* contactsView.swift */; };
+		5ED7DACF2AE1403A004D9974 /* exhibitorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */; };
+		A564F4D191039DA446D45624 /* Pods_SPG_2023_SPG_2023UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */; };
+		CEF6F2254222281AAAC3F3E2 /* Pods_SPG_2023.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023_SPG_2023UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023-SPG 2023UITests.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2149EB2AD6B84700BB0CCD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		5E2149ED2AD6BBF300BB0CCD /* programView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = programView.swift; sourceTree = "<group>"; };
 		5E2149F12AD6D87500BB0CCD /* ConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
@@ -111,6 +125,22 @@
 		5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keynoteSpeakersView.swift; sourceTree = "<group>"; };
 		5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNoteDetailView.swift; sourceTree = "<group>"; };
 		5ED7DA402ADD6619004D9974 /* sponsorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sponsorsView.swift; sourceTree = "<group>"; };
+		5ED7DA432ADE53A2004D9974 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5ED7DA462ADE5C8E004D9974 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5ED7DA482ADE622A004D9974 /* favouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouritesView.swift; sourceTree = "<group>"; };
+		5ED7DAC42ADEACF8004D9974 /* galleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryView.swift; sourceTree = "<group>"; };
+		5ED7DAC62ADEBA8E004D9974 /* saveToLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveToLocal.swift; sourceTree = "<group>"; };
+		5ED7DAC82ADFE840004D9974 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5ED7DACA2ADFEBB6004D9974 /* footerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footerView.swift; sourceTree = "<group>"; };
+		5ED7DACC2AE00AC0004D9974 /* contactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsView.swift; sourceTree = "<group>"; };
+		5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exhibitorsView.swift; sourceTree = "<group>"; };
+		65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023Tests.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests.release.xcconfig"; sourceTree = "<group>"; };
+		67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023/Pods-SPG 2023.debug.xcconfig"; sourceTree = "<group>"; };
+		9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023/Pods-SPG 2023.release.xcconfig"; sourceTree = "<group>"; };
+		B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023Tests.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023-SPG 2023UITests.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF6F2254222281AAAC3F3E2 /* Pods_SPG_2023.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5916B947DF0CDA5097EF4393 /* Pods_SPG_2023Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A564F4D191039DA446D45624 /* Pods_SPG_2023_SPG_2023UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,12 +174,15 @@
 		5E4970CC2ACD46EC003870AC = {
 			isa = PBXGroup;
 			children = (
+				5ED7DA452ADE5C33004D9974 /* CoreData */,
+				5ED7DA422ADE53A2004D9974 /* Model.xcdatamodeld */,
 				5E22F7492AD7BAA900207F8A /* Launch Screen.storyboard */,
 				5E4970D72ACD46EC003870AC /* SPEG-NOV-2023 */,
 				5E4970ED2ACD46ED003870AC /* SPEG-NOV-2023Tests */,
 				5E4970F72ACD46ED003870AC /* SPEG-NOV-2023UITests */,
 				5E4970D62ACD46EC003870AC /* Products */,
 				D75EE729067AFB76DF4EB6A8 /* Pods */,
+				BA0B0D8899E143EEB6ADACC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,12 +202,13 @@
 				5E22F7482AD7B8BB00207F8A /* Info.plist */,
 				5E4971072ACD78B9003870AC /* SPG-2023 */,
 				5E4970D82ACD46EC003870AC /* SPEG_NOV_2023App.swift */,
-				5E4970DA2ACD46EC003870AC /* ContentView.swift */,
 				5E4970DC2ACD46ED003870AC /* Assets.xcassets */,
+				5E4970DA2ACD46EC003870AC /* ContentView.swift */,
 				5E4970E12ACD46ED003870AC /* Persistence.swift */,
 				5E4970E32ACD46ED003870AC /* SPEG_NOV_2023.xcdatamodeld */,
 				5E4970DE2ACD46ED003870AC /* Preview Content */,
 				5E49710A2ACE8243003870AC /* ExtraCode.swift */,
+				5ED7DAC82ADFE840004D9974 /* HeaderView.swift */,
 			);
 			path = "SPEG-NOV-2023";
 			sourceTree = "<group>";
@@ -233,13 +270,43 @@
 				5ED7DA3C2ADD58D2004D9974 /* keynoteSpeakersView.swift */,
 				5ED7DA3E2ADD5CA3004D9974 /* KeyNoteDetailView.swift */,
 				5ED7DA402ADD6619004D9974 /* sponsorsView.swift */,
+				5ED7DA482ADE622A004D9974 /* favouritesView.swift */,
+				5ED7DAC42ADEACF8004D9974 /* galleryView.swift */,
+				5ED7DAC62ADEBA8E004D9974 /* saveToLocal.swift */,
+				5ED7DACA2ADFEBB6004D9974 /* footerView.swift */,
+				5ED7DACC2AE00AC0004D9974 /* contactsView.swift */,
+				5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */,
 			);
 			path = "SPG-2023";
+			sourceTree = "<group>";
+		};
+		5ED7DA452ADE5C33004D9974 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5ED7DA462ADE5C8E004D9974 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BA0B0D8899E143EEB6ADACC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */,
+				3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */,
+				67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D75EE729067AFB76DF4EB6A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */,
+				9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */,
+				41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */,
+				FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */,
+				F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */,
+				65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -251,9 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4970FE2ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023" */;
 			buildPhases = (
+				86EEE89DE85F3AAF039D2457 /* [CP] Check Pods Manifest.lock */,
 				5E4970D12ACD46EC003870AC /* Sources */,
 				5E4970D22ACD46EC003870AC /* Frameworks */,
 				5E4970D32ACD46EC003870AC /* Resources */,
+				182D33A0F833E23523EC402F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4971012ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023Tests" */;
 			buildPhases = (
+				C361F64249C86B0E807CE3CB /* [CP] Check Pods Manifest.lock */,
 				5E4970E62ACD46ED003870AC /* Sources */,
 				5E4970E72ACD46ED003870AC /* Frameworks */,
 				5E4970E82ACD46ED003870AC /* Resources */,
+				E7D190B3FC5D3370E32AE244 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4971042ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023UITests" */;
 			buildPhases = (
+				18F1696B4CFFC45B6F3FA2E0 /* [CP] Check Pods Manifest.lock */,
 				5E4970F02ACD46ED003870AC /* Sources */,
 				5E4970F12ACD46ED003870AC /* Frameworks */,
 				5E4970F22ACD46ED003870AC /* Resources */,
+				68F4CF148DA386361C615F65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,11 +444,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		182D33A0F833E23523EC402F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18F1696B4CFFC45B6F3FA2E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPG 2023-SPG 2023UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F4CF148DA386361C615F65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86EEE89DE85F3AAF039D2457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPG 2023-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C361F64249C86B0E807CE3CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPG 2023Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D190B3FC5D3370E32AE244 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E4970D12ACD46EC003870AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED7DA472ADE5C8E004D9974 /* CoreDataStack.swift in Sources */,
 				5E4869E32AD3C36E00435ED8 /* LoadFileData.swift in Sources */,
 				5E4869D12ACE979F00435ED8 /* tracksView.swift in Sources */,
 				5E4869D72ACFCED200435ED8 /* FirstPage.swift in Sources */,
@@ -385,8 +579,12 @@
 				5EB967232AD564EE0003B2FD /* Test.swift in Sources */,
 				5E4970E22ACD46ED003870AC /* Persistence.swift in Sources */,
 				5E2149EE2AD6BBF300BB0CCD /* programView.swift in Sources */,
+				5ED7DA492ADE622A004D9974 /* favouritesView.swift in Sources */,
+				5ED7DACD2AE00AC0004D9974 /* contactsView.swift in Sources */,
 				5ED7DA3B2ADD4BF4004D9974 /* tracksDetailView.swift in Sources */,
+				5ED7DACF2AE1403A004D9974 /* exhibitorsView.swift in Sources */,
 				5E3D3C002AD7F54200D6E249 /* ScheduleDetailsView.swift in Sources */,
+				5ED7DAC72ADEBA8E004D9974 /* saveToLocal.swift in Sources */,
 				5ED7DA412ADD6619004D9974 /* sponsorsView.swift in Sources */,
 				5E3D3C022AD7FF7000D6E249 /* taskSummaryView.swift in Sources */,
 				5E22F74C2AD7BD7400207F8A /* splashView.swift in Sources */,
@@ -398,9 +596,13 @@
 				5E4970E52ACD46ED003870AC /* SPEG_NOV_2023.xcdatamodeld in Sources */,
 				5E4970DB2ACD46EC003870AC /* ContentView.swift in Sources */,
 				5E2149EC2AD6B84700BB0CCD /* RegistrationView.swift in Sources */,
+				5ED7DAC92ADFE840004D9974 /* HeaderView.swift in Sources */,
 				5E2149F22AD6D87500BB0CCD /* ConferenceView.swift in Sources */,
 				5E4971092ACD78F2003870AC /* home.swift in Sources */,
 				5E3D3BFC2AD7CF8F00D6E249 /* authorsDetailView.swift in Sources */,
+				5ED7DACB2ADFEBB6004D9974 /* footerView.swift in Sources */,
+				5ED7DAC52ADEACF8004D9974 /* galleryView.swift in Sources */,
+				5ED7DA442ADE53A2004D9974 /* Model.xcdatamodeld in Sources */,
 				5E4869D52ACFCC5800435ED8 /* CECourseView.swift in Sources */,
 				5E4970D92ACD46EC003870AC /* SPEG_NOV_2023App.swift in Sources */,
 				5E2149F42AD6D88500BB0CCD /* ExhibitionView.swift in Sources */,
@@ -561,6 +763,7 @@
 		};
 		5E4970FF2ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,6 +796,7 @@
 		};
 		5E4971002ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -625,6 +829,7 @@
 		};
 		5E4971022ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -645,6 +850,7 @@
 		};
 		5E4971032ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -665,6 +871,7 @@
 		};
 		5E4971052ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,6 +890,7 @@
 		};
 		5E4971062ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -748,6 +956,16 @@
 			);
 			currentVersion = 5E4970E42ACD46ED003870AC /* SPEG_NOV_2023.xcdatamodel */;
 			path = SPEG_NOV_2023.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		5ED7DA422ADE53A2004D9974 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ED7DA432ADE53A2004D9974 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5ED7DA432ADE53A2004D9974 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

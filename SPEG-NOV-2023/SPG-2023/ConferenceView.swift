@@ -13,6 +13,9 @@ struct ConferenceView: View {
       let ConferenceURL = Bundle.main.url(forResource: "Data/Layout/Conference", withExtension: "pdf")!
       PDFView(localFileURL: ConferenceURL)
       }
+     .navigationBarItems(leading: HeaderView(header: "Conference Layout"))
+     footerView()
+
      }
 }
 

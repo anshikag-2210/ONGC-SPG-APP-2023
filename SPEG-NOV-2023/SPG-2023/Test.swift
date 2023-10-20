@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct Test: View {
+ @State private var themes: [themeStruct] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+     VStack {
+      Text("Test")
+//         Button("Load Themes Plist") {
+//             themes = loadPlist() ?? []
+//             printThemes()
+//         }
+     }
     }
+ func printThemes() {
+     print("Loaded Themes:")
+     for theme in themes {
+         print(theme)
+     }
+ }
+
 }
 
 struct Test_Previews: PreviewProvider {

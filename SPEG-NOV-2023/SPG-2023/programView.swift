@@ -8,20 +8,6 @@
 import SwiftUI
 import WebKit
 
-//struct PDFView: UIViewRepresentable {
-//    let localFileURL: URL
-//
-// func makeUIView(context: Context) -> WKWebView {
-//     let webView = WKWebView()
-//     webView.loadFileURL(localFileURL, allowingReadAccessTo: localFileURL)
-//     return webView
-// }
-//
-//    func updateUIView(_ uiView: WKWebView, context: Context) {
-//    }
-//}
-
-
 struct programView: View {
  @State private var showWebView = false
  private let urlString: String = "Data/program/Student"
@@ -41,6 +27,9 @@ struct programView: View {
       }.background(Color(hue: 0.437, saturation: 0.054, brightness: 0.986))
        .navigationBarTitle("Program Briefs", displayMode: .large)
      }
+     .navigationBarItems(leading: HeaderView(header: "Program"))
+     footerView()
+
     }
  
 }

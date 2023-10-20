@@ -56,9 +56,15 @@ struct tracksDetailView: View {
       Spacer()
      }
      .background(Color(hue: 0.188, saturation: 0.202, brightness: 0.953))
+     .padding(EdgeInsets(top: 0, leading: -10, bottom: 0, trailing: -10))
     }
+    .padding(EdgeInsets(top: 0, leading: -10, bottom: 0, trailing: -10))
+
    }
    }
+  .navigationBarItems(leading: HeaderView(header: "Tracks"))
+  footerView()
+
  }
 }
 

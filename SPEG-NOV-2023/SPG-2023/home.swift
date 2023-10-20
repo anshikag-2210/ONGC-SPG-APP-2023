@@ -15,18 +15,39 @@ struct home: View {
  @State var _Scheduleurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/V_SCHEDULE.json"
  @State var _themesurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/THEMES.json"
  @State var _personsurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/PERSONS.json"
+ @State var _galleryurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/IMAGES.json"
+ @State var _sponsorsurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/ORGANIZATIONS.json?orderBy=%22OS_TYPE%22&equalTo=%22SPONSOR%22"
+ @State var _orgurl = "https://spg23-03112023-default-rtdb.asia-southeast1.firebasedatabase.app/tabs/data/ORGANIZATIONS.json"
+ 
  @State private var isDetailViewActive = false
  @State private var show: Int = -1
  @State private var showSheet: Bool = false
  @State private var showSideMenu: Bool = false
  var body: some View {
   ZStack{
+   
    NavigationView{
     ZStack(alignment: .topLeading){
      VStack {
       Spacer()
       //Header
-      VStack{
+      VStack(spacing: 0){
+       ZStack(alignment: .top) {
+           Rectangle()
+               .fill(Color.gray)
+               .frame(height: 40)
+               .edgesIgnoringSafeArea(.top)
+           
+           HStack {
+            NavigationLink(destination: SideMenuView(showSideMenu: true).navigationBarBackButtonHidden(true)) {
+           //  self.showSideMenu = true
+                   Image(systemName: "line.horizontal.3")
+               }
+               .padding()
+               Spacer()
+           }
+           .foregroundColor(.white)
+       }
        Image("showcasespg")
       }
       Spacer()
@@ -59,7 +80,7 @@ struct home: View {
          }
         }
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: favouritesView()){
          VStack{
            Image(systemName: "heart.fill")
             .resizable()
@@ -103,7 +124,7 @@ struct home: View {
             .resizable()
             .scaledToFit()
             .frame(width: 30)
-           Text("Exhebition \n Layout")
+           Text("Exhibition \n Layout")
             .font(.system(size: 15))
          }
         }
@@ -155,7 +176,7 @@ struct home: View {
             .resizable()
             .scaledToFit()
             .frame(width: 40)
-           Text("CE Courses")
+           Text("CE\n Courses")
             .font(.system(size: 15))
          }
         }
@@ -171,7 +192,7 @@ struct home: View {
          }
         }
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: galleryView()){
          VStack{
            Image(systemName: "photo.stack.fill")
             .resizable()
@@ -186,18 +207,18 @@ struct home: View {
        Spacer()
        HStack{
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: exhibitorsView()){
          VStack{
            Image(systemName: "square.and.arrow.up.fill")
             .resizable()
             .scaledToFit()
             .frame(width: 30)
-           Text("Analysis")
+           Text("Exhibitors")
             .font(.system(size: 15))
          }
         }
         Spacer()
-        NavigationLink(destination: tracksView()){
+        NavigationLink(destination: contactsView()){
          VStack{
            Image(systemName: "phone.fill.arrow.up.right")
             .resizable()
@@ -232,7 +253,7 @@ struct home: View {
       ZStack {
           Rectangle()
         .fill(Color(hue: 0.417, saturation: 0.739, brightness: 0.655, opacity: 0.401))
-              .frame(width: .infinity, height: 40)
+              .frame(height: 40)
           Text("Welcome to SPG 2023")
               .foregroundColor(.green)
               
@@ -241,16 +262,10 @@ struct home: View {
      }
     }
     if showSideMenu{
-     ZStack{
-      Color.white.opacity(0.3)
-     }
-     SideMenuView()
-       .frame(width: 250)
-       .offset(x: showSideMenu ? -75 : 0)
-       .transition(.move(edge: .leading))
+     SideMenuView(showSideMenu: true).navigationBarBackButtonHidden(true)
        .onTapGesture {
           withAnimation(Animation.easeInOut) {
-       showSideMenu = false
+           showSideMenu.toggle()
       }
      }
    }
@@ -269,6 +284,9 @@ struct home: View {
     fetchScheduleJSONData(from: _Scheduleurl)
     fetchThemesJSONData(from: _themesurl)
     fetchPersonsJSONData(from: _personsurl)
+   fetchGallerydata(from: _galleryurl)
+ //  fetchSponsorsDataFromObj(from: _sponsorsurl)
+   fetchOrgdata(from: _orgurl)
   }
  }
 }

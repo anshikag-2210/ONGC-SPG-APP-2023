@@ -101,7 +101,7 @@ struct Main: View {
       .foregroundColor(/*@START_MENU_TOKEN@*/.green/*@END_MENU_TOKEN@*/)
       Spacer()
       VStack{
-       Text("Footer")
+      // Text("Footer")
       }
       Spacer()
      }
@@ -111,7 +111,7 @@ struct Main: View {
      ZStack{
       //Color.white.opacity(0.3)
      }
-     SideMenuView()
+     home()
        .frame(width: 250)
        .offset(x: showSideMenu ? -75 : 0)
      .transition(.move(edge: .leading))
@@ -185,7 +185,7 @@ extension Main{
     .foregroundColor(/*@START_MENU_TOKEN@*/.green/*@END_MENU_TOKEN@*/)
     Spacer()
     VStack{
-     Text("Footer")
+    // Text("Footer")
     }
     Spacer()
    }

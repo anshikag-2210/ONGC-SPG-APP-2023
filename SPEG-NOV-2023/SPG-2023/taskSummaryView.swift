@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct taskSummaryView: View {
+ @State private var isFavorited = false
+ @State private var imageName = "heart"
  @State var event: scheduleStruct
     var body: some View {
      ScrollView{
@@ -16,7 +18,13 @@ struct taskSummaryView: View {
         Text(event.EVT_PAPER_EVENT_PAPERID)
          .fontWeight(.bold).foregroundColor(Color.green)
         Spacer()
-        Image(systemName: "heart")
+//        Image(systemName: "heart")
+        Image(systemName: imageName)
+            .onTapGesture {
+             addFavourites(from: event.CMB_ID)
+                isFavorited.toggle()
+                imageName = isFavorited ? "heart.fill" : "heart"
+            }
         .foregroundColor(Color.red)
         .font(.system(size: 11))
        }
@@ -62,6 +70,9 @@ struct taskSummaryView: View {
     //  Spacer()
      }
      Spacer()
+     .navigationBarItems(leading: HeaderView(header: "Paper Details"))
+     footerView()
+    
     }
 }
 

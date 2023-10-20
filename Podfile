@@ -12,6 +12,8 @@ pod 'Firebase/Firestore'
   target 'SPG 2023Tests' do
     inherit! :search_paths
     # Pods for testing
+ pod 'SQLite.swift', '~> 0.14.1'
+ pod 'SwiftyJSON'
   end
 
   target 'SPG 2023UITests' do

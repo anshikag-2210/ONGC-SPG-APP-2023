@@ -16,7 +16,7 @@ struct RegistrationView: View {
       WebView(url: URL(string: urlString)!)
 //       .frame(height:500)
         }
-//        .padding()
+     
     }
 }
 

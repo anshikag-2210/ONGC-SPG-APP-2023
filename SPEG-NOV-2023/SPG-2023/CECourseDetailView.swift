@@ -73,6 +73,8 @@ struct CECourseDetailView: View {
     .padding()
   //  Spacer()
    }
+   .navigationBarItems(leading: HeaderView(header: "CE Course"))
+   footerView()
  // }
  }
 }
