@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import CoreData
+import SQLite3
 
 struct scheduleStruct: Decodable {
     let AU_ID: String
@@ -388,16 +389,45 @@ func fetchOrgdata(from _url: String) {
     }
 }
 
-func addFavourites(from cbmId: String){
- do{
-  let context = CoreDataManager.shared.managedObjectContext
-  let fav = FAVOURITES(context: context)
-  fav.id = .init()
-  fav.cmb_id = cbmId
-  CoreDataManager.shared.saveContext()
+//func addFavourites(from cbmId: String){
+// do{
+//  let context = CoreDataManager.shared.managedObjectContext
+//  let fav = FAVOURITES(context: context)
+//  fav.id = .init()
+//  fav.cmb_id = cbmId
+//  CoreDataManager.shared.saveContext()
+// }
+// catch{
+//  print(error.localizedDescription )
+// }
+//}
+
+//public struct Table: SchemaType {
+//
+//    public static let identifier = "TABLE"
+//
+//    public var clauses: QueryClauses
+//
+//    public init(_ name: String, database: String? = nil) {
+//        clauses = QueryClauses(name, alias: nil, database: database)
+//    }
+//
+//}
+
+
+func openDatabase() -> OpaquePointer? {
+  var db: OpaquePointer?
+ if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
+  let part1DbPath = documentsDirectory.appendingPathComponent("GeoIndia").appendingPathExtension("sqlite3")
+  //(part1DbPath, &db)
+  if sqlite3_open(part1DbPath.path,&db)  == SQLITE_OK {
+    print("Successfully opened connection to database at \(part1DbPath)")
+    return db
+  } else {
+    print("Unable to open database.")
+    //PlaygroundPage.current.finishExecution()
+  }
  }
- catch{
-  print(error.localizedDescription )
- }
+return db
 }
 

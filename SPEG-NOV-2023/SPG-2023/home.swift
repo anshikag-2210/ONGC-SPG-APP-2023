@@ -24,8 +24,9 @@ struct home: View {
  @State private var showSheet: Bool = false
  @State private var showSideMenu: Bool = false
  var body: some View {
+  let db = openDatabase()
+  createTables(db)
   ZStack{
-   
    NavigationView{
     ZStack(alignment: .topLeading){
      VStack {

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '16.0'
 
 target 'SPG 2023' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -14,6 +14,7 @@ pod 'Firebase/Firestore'
     # Pods for testing
  pod 'SQLite.swift', '~> 0.14.1'
  pod 'SwiftyJSON'
+ pod 'SQLite'
   end
 
   target 'SPG 2023UITests' do

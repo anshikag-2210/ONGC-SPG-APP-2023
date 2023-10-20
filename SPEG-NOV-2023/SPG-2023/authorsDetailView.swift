@@ -64,11 +64,11 @@ struct authorsDetailView: View {
           Spacer()
 //          Image(systemName: "heart")
           Image(systemName: imageName)
-              .onTapGesture {
-               addFavourites(from: authPaper.CMB_ID)
-                  isFavorited.toggle()
-                  imageName = isFavorited ? "heart.fill" : "heart"
-              }
+//              .onTapGesture {
+//               addFavourites(from: authPaper.CMB_ID)
+//                  isFavorited.toggle()
+//                  imageName = isFavorited ? "heart.fill" : "heart"
+//              }
 
           Spacer()
          }.foregroundColor(Color.red)
