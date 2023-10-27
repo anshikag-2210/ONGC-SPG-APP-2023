@@ -119,6 +119,19 @@ struct personsStruct: Codable {
  enum CodingKeys: String, CodingKey {
      case CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE, PD_BIO
  }
+ 
+ static func ==(lhs: personsStruct, rhs: personsStruct) -> Bool {
+     // Implement custom comparison logic here.
+     return lhs.CMB_ID == rhs.CMB_ID &&
+            lhs.PD_COUNTRY == rhs.PD_COUNTRY &&
+            lhs.PD_EMAIL == rhs.PD_EMAIL &&
+            lhs.PD_NAME == rhs.PD_NAME &&
+            lhs.PD_ORGANIZATION == rhs.PD_ORGANIZATION &&
+            lhs.PD_PHONE1 == rhs.PD_PHONE1 &&
+            lhs.PD_PTYPE == rhs.PD_PTYPE &&
+            lhs.PD_WORKPROFILE == rhs.PD_WORKPROFILE &&
+            lhs.PD_BIO == rhs.PD_BIO
+ }
 }
 struct galleryStruct: Decodable {
     let CMB_ID: String
@@ -143,7 +156,6 @@ struct galleryStruct: Decodable {
      case CMB_ID, IM_CATEGORY, IM_DATE, IM_DESC, IM_ID, IM_PATH
  }
 }
-
 struct organizationsStruct: Decodable {
     let CMB_ID: String
     let OS_BOOTHS: String
@@ -191,8 +203,6 @@ struct organizationsStruct: Decodable {
         case CMB_ID, OS_BOOTHS, OS_NAME, OS_QUANTUM, OS_SUBTYPE, OS_TYPE, OS_WEBSITE
     }
 }
-
-
 struct sponsorsStruct: Decodable {
     let CMB_ID: Int
     let OS_BOOTHS: String // Use Any type to accommodate both Int and String
@@ -219,8 +229,6 @@ struct sponsorsStruct: Decodable {
         case CMB_ID, OS_BOOTHS, OS_NAME, OS_QUANTUM, OS_SUBTYPE, OS_TYPE, OS_WEBSITE
     }
 }
-
-
 func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Error>) -> Void) {
  
  URLSession.shared.dataTask(with: url) { data, response, error in
@@ -242,7 +250,6 @@ func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Err
   }
  }.resume()
 }
-
 
 var scheduleData: [String: scheduleStruct] = [:]
 var scheduleDataArr: [scheduleStruct] = []
@@ -298,21 +305,53 @@ func fetchThemesJSONData(from _url: String) {
         }
     }
 }
-func fetchPersonsJSONData(from _url: String) {
-    // First, try to load data from the local file
-    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
-        if let loadedData = try? Data(contentsOf: fileURL) {
-            do {
-                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
-                // Use your loadedArray as needed
-                personsData = loadedArray
-            } catch {
-                print("Error decoding local data: \(error)")
-            }
-        }
-    }
+//func fetchPersonsJSONData(from _url: String) {
+//    // First, try to load data from the local file
+//    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+//        if let loadedData = try? Data(contentsOf: fileURL) {
+//            do {
+//                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
+//                // Use your loadedArray as needed
+//                personsData = loadedArray
+//            } catch {
+//                print("Error decoding local data: \(error)")
+//            }
+//        }
+//    }
+//
+//    // Fetch data from the internet
+//    guard let url = URL(string: _url) else {
+//        return
+//    }
+//
+//    fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+//        switch result {
+//        case .success(let decodedData):
+//            // Update local data with data from the internet
+//            personsData = decodedData
+//
+//            // Save the updated data to the local JSON file
+//            if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//                let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+//                do {
+//                    let jsonData = try JSONEncoder().encode(decodedData)
+//                    try jsonData.write(to: fileURL)
+//                    print("Data saved to file: \(fileURL)")
+//                } catch {
+//                    print("Error saving data to file: \(error)")
+//                }
+//            }
+//        case .failure(let error):
+//            print("Error fetching data: \(error)")
+//        }
+//    }
+//}
 
+
+
+//fetch persons data
+func fetchPersonsJSONData(from _url: String) {
     // Fetch data from the internet
     guard let url = URL(string: _url) else {
         return
@@ -321,26 +360,66 @@ func fetchPersonsJSONData(from _url: String) {
     fetchData(from: url) { (result: Result<[personsStruct], Error>) in
         switch result {
         case .success(let decodedData):
-            // Update local data with data from the internet
-            personsData = decodedData
-
-            // Save the updated data to the local JSON file
-            if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
-                do {
-                    let jsonData = try JSONEncoder().encode(decodedData)
-                    try jsonData.write(to: fileURL)
-                    print("Data saved to file: \(fileURL)")
-                } catch {
-                    print("Error saving data to file: \(error)")
-                }
+            if PersonsshouldUpdateLocalData(newData: decodedData) {
+                personsData = decodedData
+             PersonssaveDataToLocalFile(data: decodedData)
             }
         case .failure(let error):
             print("Error fetching data: \(error)")
         }
     }
 }
-
+func PersonsshouldUpdateLocalData(newData: [personsStruct]) -> Bool {
+    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+        if let loadedData = try? Data(contentsOf: fileURL) {
+            do {
+                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
+                
+                // Compare the loaded data with the new data to determine if they are different
+                return PersonsareArraysDifferent(array1: loadedArray, array2: newData)
+            } catch {
+                print("Error decoding local data: \(error)")
+            }
+        }
+    }
+    
+    // If there was an error reading local data or local data is missing, update
+    return true
+}
+func PersonsareArraysDifferent(array1: [personsStruct], array2: [personsStruct]) -> Bool {
+    if array1.count != array2.count {
+        return true
+    }
+    
+    for (index, item) in array1.enumerated() {
+        if item.CMB_ID != array2[index].CMB_ID ||
+           item.PD_COUNTRY != array2[index].PD_COUNTRY ||
+           item.PD_EMAIL != array2[index].PD_EMAIL ||
+           item.PD_NAME != array2[index].PD_NAME ||
+           item.PD_ORGANIZATION != array2[index].PD_ORGANIZATION ||
+           item.PD_PHONE1 != array2[index].PD_PHONE1 ||
+           item.PD_PTYPE != array2[index].PD_PTYPE ||
+           item.PD_WORKPROFILE != array2[index].PD_WORKPROFILE ||
+           item.PD_BIO != array2[index].PD_BIO {
+            return true
+        }
+    }
+    
+    return false
+}
+func PersonssaveDataToLocalFile(data: [personsStruct]) {
+    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+        do {
+            let jsonData = try JSONEncoder().encode(data)
+            try jsonData.write(to: fileURL)
+            print("Data saved to file: \(fileURL)")
+        } catch {
+            print("Error saving data to file: \(error)")
+        }
+    }
+}
 
 //func fetchPersonsJSONData(from _url: String) {
 // guard let url = URL(string: _url) else {
@@ -373,6 +452,8 @@ func fetchGallerydata(from _url: String) {
         }
     }
 }
+
+
 func fetchOrgdata(from _url: String) {
  guard let url = URL(string: _url) else {
      return
@@ -389,6 +470,8 @@ func fetchOrgdata(from _url: String) {
     }
 }
 
+
+
 //func addFavourites(from cbmId: String){
 // do{
 //  let context = CoreDataManager.shared.managedObjectContext
@@ -402,23 +485,10 @@ func fetchOrgdata(from _url: String) {
 // }
 //}
 
-//public struct Table: SchemaType {
-//
-//    public static let identifier = "TABLE"
-//
-//    public var clauses: QueryClauses
-//
-//    public init(_ name: String, database: String? = nil) {
-//        clauses = QueryClauses(name, alias: nil, database: database)
-//    }
-//
-//}
-
-
 func openDatabase() -> OpaquePointer? {
   var db: OpaquePointer?
  if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
-  let part1DbPath = documentsDirectory.appendingPathComponent("GeoIndia").appendingPathExtension("sqlite3")
+  let part1DbPath = documentsDirectory.appendingPathComponent("SPG-2023").appendingPathExtension("sqlite")
   //(part1DbPath, &db)
   if sqlite3_open(part1DbPath.path,&db)  == SQLITE_OK {
     print("Successfully opened connection to database at \(part1DbPath)")
@@ -431,3 +501,164 @@ func openDatabase() -> OpaquePointer? {
 return db
 }
 
+func insert(from db: OpaquePointer?) {
+ let insertStatementString = "INSERT INTO personsData (CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE ,PD_BIO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
+  var insertStatement: OpaquePointer?
+  // 1
+  if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) ==
+      SQLITE_OK {
+   let CMB_ID: NSString = "Ray"
+   let PD_COUNTRY: NSString = "Ray"
+   let PD_EMAIL: NSString = "Ray"
+   let PD_NAME: NSString = "Ray"
+   let PD_ORGANIZATION: NSString = "Ray"
+   let PD_PHONE1: NSString = "Ray"
+   let PD_PTYPE: NSString = "Ray"
+   let PD_WORKPROFILE: NSString = "Ray"
+   let PD_BIO: NSString = "Ray"
+   sqlite3_bind_text(insertStatement, 2, CMB_ID.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_COUNTRY.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_EMAIL.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_NAME.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_ORGANIZATION.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_PHONE1.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_WORKPROFILE.utf8String, -1, nil)
+   sqlite3_bind_text(insertStatement, 2, PD_BIO.utf8String, -1, nil)
+    if sqlite3_step(insertStatement) == SQLITE_DONE {
+      print("\nSuccessfully inserted row.")
+    } else {
+      print("\nCould not insert row.")
+    }
+  } else {
+    print("\nINSERT statement is not prepared.")
+  }
+  sqlite3_finalize(insertStatement)
+}
+
+
+
+
+// create table functions.
+//func createPersonsTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE personsData(
+// CMB_ID STRING, PD_COUNTRY String, PD_EMAIL String,PD_NAME STRING,
+// PD_ORGANIZATION String, PD_PHONE1 String, PD_PTYPE STRING,
+// PD_WORKPROFILE String, PD_BIO String);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}
+//
+//func createScheduleTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE scheduleDataArr(
+//  AU_ID STRING, CMB_ID STRING, AU_NAME String, AU_ORGANIZATION String, AU_WORKPROFILE STRING, EVT_COAUTHORS String, EVT_ID String, EVT_PAPER_EVENT_PAPERID STRING, EVT_PAPER_ID String, EVT_STATUS String,
+//      EVT_TITLE STRING, EVT_TYPE STRING, SLOT_DATE String, SLOT_DAY String, SLOT_END STRING, SLOT_ID String, SLOT_START String, SLOT_VENUE1 STRING, SLOT_VENUE2 String, SP_ID String, SP_NAME String, SP_ORGANIZATION String, SP_WORKPROFILE STRING, TH_ID String, TH_THEME String);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}
+//
+//func createThemesTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE themesData(
+//CMB_ID STRING, TH_CODE String, TH_ID String, TH_STATUS STRING, TH_THEME String, TH_TYPE String, TH_VENUE STRING);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}
+//
+//func createGalleryTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE galleryData(
+//CMB_ID STRING, IM_CATEGORY String, IM_DATE String, IM_DESC STRING, IM_ID String, IM_PATH String);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}
+//
+//func createorganizationsTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE organizationsData(
+//CMB_ID STRING, OS_BOOTHS String, OS_NAME String, OS_QUANTUM STRING, OS_SUBTYPE String, OS_TYPE String, OS_WEBSITE String);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}
+//
+//func createCECourseTable(from db: OpaquePointer?) {
+// var createTableString = """
+// CREATE TABLE CECourseDeta(
+//CMB_ID STRING, CE_COURSEID String, CE_FACULTY String, CE_FACULTY_DESC STRING, CE_FACULTY_ID String, CE_ID String, CE_THEME String,
+//CE_TITLE STRING, CE_COURSE_DESC String, CE_DATE String, CE_OUTLINE STRING, CE_OBJECTIVE String);
+//"""
+//  var createTableStatement: OpaquePointer?
+//  if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) ==
+//      SQLITE_OK {
+//    if sqlite3_step(createTableStatement) == SQLITE_DONE {
+//      print("\nContact table created.")
+//    } else {
+//      print("\nContact table is not created.")
+//    }
+//  }
+// else {
+//    print("\nCREATE TABLE statement is not prepared.")
+//  }
+//  sqlite3_finalize(createTableStatement)
+//}

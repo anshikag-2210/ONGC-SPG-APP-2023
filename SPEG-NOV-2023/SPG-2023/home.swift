@@ -25,7 +25,7 @@ struct home: View {
  @State private var showSideMenu: Bool = false
  var body: some View {
   let db = openDatabase()
-  createTables(db)
+ 
   ZStack{
    NavigationView{
     ZStack(alignment: .topLeading){
@@ -285,9 +285,16 @@ struct home: View {
     fetchScheduleJSONData(from: _Scheduleurl)
     fetchThemesJSONData(from: _themesurl)
     fetchPersonsJSONData(from: _personsurl)
-   fetchGallerydata(from: _galleryurl)
+    fetchGallerydata(from: _galleryurl)
  //  fetchSponsorsDataFromObj(from: _sponsorsurl)
-   fetchOrgdata(from: _orgurl)
+     fetchOrgdata(from: _orgurl)
+//  s createPersonsTable(from: db)
+//   createScheduleTable(from: db)
+//   createThemesTable(from: db)
+//   createGalleryTable(from: db)
+//   createorganizationsTable(from: db)
+//   createCECourseTable(from: db)
+   insert(from: db)
   }
  }
 }
