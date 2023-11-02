@@ -10,8 +10,12 @@ import SwiftUI
 struct ExhibitionView: View {
     var body: some View {
      VStack{
-      let exhbURL = Bundle.main.url(forResource: "Data/Layout/ExbhLayout", withExtension: "pdf")!
-      PDFView(localFileURL: exhbURL)
+//      let exhbURL = Bundle.main.url(forResource: "Data/Layout/ExbhLayout", withExtension: "pdf")!
+//      PDFView(localFileURL: exhbURL)
+      Image("ExbhLayout")
+       .resizable()
+       .navigationBarTitle("EXhibition Layout", displayMode: .large)
+
       }
       .navigationBarItems(leading: HeaderView(header: "EXhibition Layout"))
       footerView()

@@ -50,6 +50,11 @@ struct sponsorsView: View {
           .aspectRatio(CGSize(width: 16, height: 9), contentMode: .fit)
           Text(item.OS_NAME)
          }
+         .overlay(
+             RoundedRectangle(cornerRadius: 10)
+                 .stroke(Color.gray, lineWidth: 3) 
+         )
+
          Spacer()
         }
       }

@@ -10,19 +10,24 @@ import CoreData
 
 struct favouritesView: View {
 // @State private var cbmId: String = ""
- @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        entity: FAVOURITES.entity(),  // Use the name of your Core Data entity
-        sortDescriptors: [],  // Add sort descriptors if needed
-        predicate: nil  // Add a predicate if needed to filter data
-    ) var favourites: FetchedResults<FAVOURITES>
+// @Environment(\.managedObjectContext) private var viewContext
+//    @FetchRequest(
+//        entity: FAVOURITES.entity(),  // Use the name of your Core Data entity
+//        sortDescriptors: [],  // Add sort descriptors if needed
+//        predicate: nil  // Add a predicate if needed to filter data
+//    ) var favourites: FetchedResults<FAVOURITES>
     var body: some View {
-     Text("Favourites")
-     List {
-         ForEach(favourites) { favourite in
-             Text(favourite.cmb_id ?? "N/A")
-         }
+     VStack{
+      Text("Coming Soon..")
+      footerView()
+
      }
+
+//     List {
+//         ForEach(favourites) { favourite in
+//             Text(favourite.cmb_id ?? "N/A")
+//         }
+//     }
     }
 }
 

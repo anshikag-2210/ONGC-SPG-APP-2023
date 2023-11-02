@@ -23,6 +23,6 @@ struct footerView: View {
 
 struct footerView_Previews: PreviewProvider {
     static var previews: some View {
-        footerView()
+        home()
     }
 }

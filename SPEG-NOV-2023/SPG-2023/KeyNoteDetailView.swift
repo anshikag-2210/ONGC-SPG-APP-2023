@@ -10,9 +10,10 @@ import SwiftUI
 struct KeyNoteDetailView: View {
  @State var keyNoteSpeaker: personsStruct
  var body: some View {
- // VStack{
+  VStack{
    ScrollView{
-    Image("author1")
+    let imageName = "\(keyNoteSpeaker.CMB_ID)"
+    Image(imageName)
      .clipShape(Circle())
      .overlay(Circle().stroke(Color.gray, lineWidth: 4))
     Text(keyNoteSpeaker.PD_NAME)
@@ -25,7 +26,7 @@ struct KeyNoteDetailView: View {
     }.foregroundColor(Color(hue: 1.0, saturation: 0.067, brightness: 0.506))
     Spacer()
     HStack{
-     Text("Brief Biio")
+     Text("Brief Bio")
       .fontWeight(.bold)
       .foregroundColor(Color(hue: 0.331, saturation: 0.886, brightness: 0.708))
      Spacer()
@@ -82,8 +83,7 @@ struct KeyNoteDetailView: View {
   }
    .navigationBarItems(leading: HeaderView(header: "Key Note Speakers"))
    footerView()
-
-// }
+ }
 }
 }
 

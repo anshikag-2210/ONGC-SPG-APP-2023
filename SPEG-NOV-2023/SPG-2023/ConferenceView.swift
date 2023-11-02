@@ -12,6 +12,7 @@ struct ConferenceView: View {
      VStack{
       let ConferenceURL = Bundle.main.url(forResource: "Data/Layout/Conference", withExtension: "pdf")!
       PDFView(localFileURL: ConferenceURL)
+       .navigationBarTitle("Conference Layout", displayMode: .large)
       }
      .navigationBarItems(leading: HeaderView(header: "Conference Layout"))
      footerView()

@@ -1,6 +1,0 @@
-framework module Pods_SPG_2023Tests {
-  umbrella header "Pods-SPG 2023Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

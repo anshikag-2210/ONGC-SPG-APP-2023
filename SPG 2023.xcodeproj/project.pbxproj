@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5916B947DF0CDA5097EF4393 /* Pods_SPG_2023Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */; };
 		5E2149EC2AD6B84700BB0CCD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149EB2AD6B84700BB0CCD /* RegistrationView.swift */; };
-		5E2149EE2AD6BBF300BB0CCD /* programView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149ED2AD6BBF300BB0CCD /* programView.swift */; };
+		5E2149EE2AD6BBF300BB0CCD /* StudentProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149ED2AD6BBF300BB0CCD /* StudentProgramView.swift */; };
 		5E2149F22AD6D87500BB0CCD /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149F12AD6D87500BB0CCD /* ConferenceView.swift */; };
 		5E2149F42AD6D88500BB0CCD /* ExhibitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149F32AD6D88500BB0CCD /* ExhibitionView.swift */; };
 		5E2149F62AD6D8A900BB0CCD /* pdfViewHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2149F52AD6D8A900BB0CCD /* pdfViewHelp.swift */; };
@@ -20,6 +19,13 @@
 		5E3D3C002AD7F54200D6E249 /* ScheduleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D3BFF2AD7F54200D6E249 /* ScheduleDetailsView.swift */; };
 		5E3D3C022AD7FF7000D6E249 /* taskSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D3C012AD7FF7000D6E249 /* taskSummaryView.swift */; };
 		5E3D3C042AD809E100D6E249 /* firebaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D3C032AD809E100D6E249 /* firebaseDB.swift */; };
+		5E3E707C2AF22D0E007BF327 /* contactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E707B2AF22D0E007BF327 /* contactsDetailView.swift */; };
+		5E3E707E2AF23252007BF327 /* carrierSympView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E707D2AF23252007BF327 /* carrierSympView.swift */; };
+		5E3E70802AF23269007BF327 /* geohorizonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E707F2AF23269007BF327 /* geohorizonsView.swift */; };
+		5E3E70822AF232C4007BF327 /* webViewHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E70812AF232C4007BF327 /* webViewHelp.swift */; };
+		5E3E70842AF23586007BF327 /* SpouseProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E70832AF23586007BF327 /* SpouseProgramView.swift */; };
+		5E3E70862AF26F4D007BF327 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E70852AF26F4D007BF327 /* RemoteImageView.swift */; };
+		5E3E70882AF38269007BF327 /* brochureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E70872AF38269007BF327 /* brochureView.swift */; };
 		5E4869D12ACE979F00435ED8 /* tracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4869D02ACE979F00435ED8 /* tracksView.swift */; };
 		5E4869D32ACED92400435ED8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4869D22ACED92400435ED8 /* SideMenuView.swift */; };
 		5E4869D52ACFCC5800435ED8 /* CECourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4869D42ACFCC5800435ED8 /* CECourseView.swift */; };
@@ -40,6 +46,12 @@
 		5E4970FB2ACD46ED003870AC /* SPEG_NOV_2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4970FA2ACD46ED003870AC /* SPEG_NOV_2023UITestsLaunchTests.swift */; };
 		5E4971092ACD78F2003870AC /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4971082ACD78F2003870AC /* home.swift */; };
 		5E49710B2ACE8243003870AC /* ExtraCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E49710A2ACE8243003870AC /* ExtraCode.swift */; };
+		5E79B92F2AEBC56100A4118F /* UpdatePersonsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B92E2AEBC56100A4118F /* UpdatePersonsData.swift */; };
+		5E79B9312AEBC5B800A4118F /* fetschScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B9302AEBC5B800A4118F /* fetschScheduleData.swift */; };
+		5E79B9332AEBC9ED00A4118F /* themesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B9322AEBC9ED00A4118F /* themesData.swift */; };
+		5E79B9352AEBCC6C00A4118F /* galleryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B9342AEBCC6C00A4118F /* galleryData.swift */; };
+		5E79B9372AEBCDA900A4118F /* orgData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B9362AEBCDA900A4118F /* orgData.swift */; };
+		5E79B93B2AEBD32600A4118F /* CECourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79B93A2AEBD32600A4118F /* CECourseData.swift */; };
 		5E97AEDE2AD669E20016DCE6 /* AuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97AEDD2AD669E20016DCE6 /* AuthorsView.swift */; };
 		5EB9671F2AD4177B0003B2FD /* CECourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB9671E2AD4177B0003B2FD /* CECourseDetailView.swift */; };
 		5EB967212AD556C90003B2FD /* NavigationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB967202AD556C90003B2FD /* NavigationModifiers.swift */; };
@@ -57,8 +69,6 @@
 		5ED7DACB2ADFEBB6004D9974 /* footerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACA2ADFEBB6004D9974 /* footerView.swift */; };
 		5ED7DACD2AE00AC0004D9974 /* contactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACC2AE00AC0004D9974 /* contactsView.swift */; };
 		5ED7DACF2AE1403A004D9974 /* exhibitorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */; };
-		A564F4D191039DA446D45624 /* Pods_SPG_2023_SPG_2023UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */; };
-		CEF6F2254222281AAAC3F3E2 /* Pods_SPG_2023.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023_SPG_2023UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023-SPG 2023UITests.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2149EB2AD6B84700BB0CCD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		5E2149ED2AD6BBF300BB0CCD /* programView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = programView.swift; sourceTree = "<group>"; };
+		5E2149ED2AD6BBF300BB0CCD /* StudentProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProgramView.swift; sourceTree = "<group>"; };
 		5E2149F12AD6D87500BB0CCD /* ConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
 		5E2149F32AD6D88500BB0CCD /* ExhibitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionView.swift; sourceTree = "<group>"; };
 		5E2149F52AD6D8A900BB0CCD /* pdfViewHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfViewHelp.swift; sourceTree = "<group>"; };
@@ -94,6 +102,13 @@
 		5E3D3BFF2AD7F54200D6E249 /* ScheduleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailsView.swift; sourceTree = "<group>"; };
 		5E3D3C012AD7FF7000D6E249 /* taskSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskSummaryView.swift; sourceTree = "<group>"; };
 		5E3D3C032AD809E100D6E249 /* firebaseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseDB.swift; sourceTree = "<group>"; };
+		5E3E707B2AF22D0E007BF327 /* contactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsDetailView.swift; sourceTree = "<group>"; };
+		5E3E707D2AF23252007BF327 /* carrierSympView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrierSympView.swift; sourceTree = "<group>"; };
+		5E3E707F2AF23269007BF327 /* geohorizonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geohorizonsView.swift; sourceTree = "<group>"; };
+		5E3E70812AF232C4007BF327 /* webViewHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewHelp.swift; sourceTree = "<group>"; };
+		5E3E70832AF23586007BF327 /* SpouseProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpouseProgramView.swift; sourceTree = "<group>"; };
+		5E3E70852AF26F4D007BF327 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		5E3E70872AF38269007BF327 /* brochureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brochureView.swift; sourceTree = "<group>"; };
 		5E4869D02ACE979F00435ED8 /* tracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracksView.swift; sourceTree = "<group>"; };
 		5E4869D22ACED92400435ED8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		5E4869D42ACFCC5800435ED8 /* CECourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CECourseView.swift; sourceTree = "<group>"; };
@@ -117,6 +132,12 @@
 		5E4970FA2ACD46ED003870AC /* SPEG_NOV_2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEG_NOV_2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E4971082ACD78F2003870AC /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		5E49710A2ACE8243003870AC /* ExtraCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCode.swift; sourceTree = "<group>"; };
+		5E79B92E2AEBC56100A4118F /* UpdatePersonsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonsData.swift; sourceTree = "<group>"; };
+		5E79B9302AEBC5B800A4118F /* fetschScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetschScheduleData.swift; sourceTree = "<group>"; };
+		5E79B9322AEBC9ED00A4118F /* themesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = themesData.swift; sourceTree = "<group>"; };
+		5E79B9342AEBCC6C00A4118F /* galleryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryData.swift; sourceTree = "<group>"; };
+		5E79B9362AEBCDA900A4118F /* orgData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgData.swift; sourceTree = "<group>"; };
+		5E79B93A2AEBD32600A4118F /* CECourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CECourseData.swift; sourceTree = "<group>"; };
 		5E97AEDD2AD669E20016DCE6 /* AuthorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsView.swift; sourceTree = "<group>"; };
 		5EB9671E2AD4177B0003B2FD /* CECourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CECourseDetailView.swift; sourceTree = "<group>"; };
 		5EB967202AD556C90003B2FD /* NavigationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifiers.swift; sourceTree = "<group>"; };
@@ -134,13 +155,6 @@
 		5ED7DACA2ADFEBB6004D9974 /* footerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footerView.swift; sourceTree = "<group>"; };
 		5ED7DACC2AE00AC0004D9974 /* contactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsView.swift; sourceTree = "<group>"; };
 		5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exhibitorsView.swift; sourceTree = "<group>"; };
-		65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023Tests.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests.release.xcconfig"; sourceTree = "<group>"; };
-		67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023/Pods-SPG 2023.debug.xcconfig"; sourceTree = "<group>"; };
-		9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023/Pods-SPG 2023.release.xcconfig"; sourceTree = "<group>"; };
-		B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPG_2023.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023Tests.debug.xcconfig"; path = "Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPG 2023-SPG 2023UITests.release.xcconfig"; path = "Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF6F2254222281AAAC3F3E2 /* Pods_SPG_2023.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5916B947DF0CDA5097EF4393 /* Pods_SPG_2023Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +176,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A564F4D191039DA446D45624 /* Pods_SPG_2023_SPG_2023UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +193,6 @@
 				5E4970F72ACD46ED003870AC /* SPEG-NOV-2023UITests */,
 				5E4970D62ACD46EC003870AC /* Products */,
 				D75EE729067AFB76DF4EB6A8 /* Pods */,
-				BA0B0D8899E143EEB6ADACC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,7 +266,7 @@
 				5EB967222AD564EE0003B2FD /* Test.swift */,
 				5E97AEDD2AD669E20016DCE6 /* AuthorsView.swift */,
 				5E2149EB2AD6B84700BB0CCD /* RegistrationView.swift */,
-				5E2149ED2AD6BBF300BB0CCD /* programView.swift */,
+				5E2149ED2AD6BBF300BB0CCD /* StudentProgramView.swift */,
 				5E2149F12AD6D87500BB0CCD /* ConferenceView.swift */,
 				5E2149F32AD6D88500BB0CCD /* ExhibitionView.swift */,
 				5E2149F52AD6D8A900BB0CCD /* pdfViewHelp.swift */,
@@ -276,6 +286,19 @@
 				5ED7DACA2ADFEBB6004D9974 /* footerView.swift */,
 				5ED7DACC2AE00AC0004D9974 /* contactsView.swift */,
 				5ED7DACE2AE1403A004D9974 /* exhibitorsView.swift */,
+				5E79B92E2AEBC56100A4118F /* UpdatePersonsData.swift */,
+				5E79B9302AEBC5B800A4118F /* fetschScheduleData.swift */,
+				5E79B9322AEBC9ED00A4118F /* themesData.swift */,
+				5E79B9342AEBCC6C00A4118F /* galleryData.swift */,
+				5E79B9362AEBCDA900A4118F /* orgData.swift */,
+				5E79B93A2AEBD32600A4118F /* CECourseData.swift */,
+				5E3E707B2AF22D0E007BF327 /* contactsDetailView.swift */,
+				5E3E707D2AF23252007BF327 /* carrierSympView.swift */,
+				5E3E707F2AF23269007BF327 /* geohorizonsView.swift */,
+				5E3E70812AF232C4007BF327 /* webViewHelp.swift */,
+				5E3E70832AF23586007BF327 /* SpouseProgramView.swift */,
+				5E3E70852AF26F4D007BF327 /* RemoteImageView.swift */,
+				5E3E70872AF38269007BF327 /* brochureView.swift */,
 			);
 			path = "SPG-2023";
 			sourceTree = "<group>";
@@ -288,25 +311,9 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		BA0B0D8899E143EEB6ADACC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B83BBADDAEC9C730A6DA3B5F /* Pods_SPG_2023.framework */,
-				3D412A02AA6BE034514AAD73 /* Pods_SPG_2023_SPG_2023UITests.framework */,
-				67762BC471108428AC33E253 /* Pods_SPG_2023Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D75EE729067AFB76DF4EB6A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */,
-				9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */,
-				41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */,
-				FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */,
-				F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */,
-				65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -318,11 +325,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4970FE2ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023" */;
 			buildPhases = (
-				86EEE89DE85F3AAF039D2457 /* [CP] Check Pods Manifest.lock */,
 				5E4970D12ACD46EC003870AC /* Sources */,
 				5E4970D22ACD46EC003870AC /* Frameworks */,
 				5E4970D32ACD46EC003870AC /* Resources */,
-				182D33A0F833E23523EC402F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,11 +342,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4971012ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023Tests" */;
 			buildPhases = (
-				C361F64249C86B0E807CE3CB /* [CP] Check Pods Manifest.lock */,
 				5E4970E62ACD46ED003870AC /* Sources */,
 				5E4970E72ACD46ED003870AC /* Frameworks */,
 				5E4970E82ACD46ED003870AC /* Resources */,
-				E7D190B3FC5D3370E32AE244 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,11 +360,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4971042ACD46ED003870AC /* Build configuration list for PBXNativeTarget "SPG 2023UITests" */;
 			buildPhases = (
-				18F1696B4CFFC45B6F3FA2E0 /* [CP] Check Pods Manifest.lock */,
 				5E4970F02ACD46ED003870AC /* Sources */,
 				5E4970F12ACD46ED003870AC /* Frameworks */,
 				5E4970F22ACD46ED003870AC /* Resources */,
-				68F4CF148DA386361C615F65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -444,131 +445,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		182D33A0F833E23523EC402F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023/Pods-SPG 2023-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18F1696B4CFFC45B6F3FA2E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SPG 2023-SPG 2023UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68F4CF148DA386361C615F65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023-SPG 2023UITests/Pods-SPG 2023-SPG 2023UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86EEE89DE85F3AAF039D2457 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SPG 2023-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C361F64249C86B0E807CE3CB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SPG 2023Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7D190B3FC5D3370E32AE244 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPG 2023Tests/Pods-SPG 2023Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5E4970D12ACD46EC003870AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E79B92F2AEBC56100A4118F /* UpdatePersonsData.swift in Sources */,
 				5ED7DA472ADE5C8E004D9974 /* CoreDataStack.swift in Sources */,
 				5E4869E32AD3C36E00435ED8 /* LoadFileData.swift in Sources */,
 				5E4869D12ACE979F00435ED8 /* tracksView.swift in Sources */,
@@ -576,9 +458,10 @@
 				5E4869D92ACFD8EB00435ED8 /* Main.swift in Sources */,
 				5E97AEDE2AD669E20016DCE6 /* AuthorsView.swift in Sources */,
 				5E2149F62AD6D8A900BB0CCD /* pdfViewHelp.swift in Sources */,
+				5E3E70882AF38269007BF327 /* brochureView.swift in Sources */,
 				5EB967232AD564EE0003B2FD /* Test.swift in Sources */,
 				5E4970E22ACD46ED003870AC /* Persistence.swift in Sources */,
-				5E2149EE2AD6BBF300BB0CCD /* programView.swift in Sources */,
+				5E2149EE2AD6BBF300BB0CCD /* StudentProgramView.swift in Sources */,
 				5ED7DA492ADE622A004D9974 /* favouritesView.swift in Sources */,
 				5ED7DACD2AE00AC0004D9974 /* contactsView.swift in Sources */,
 				5ED7DA3B2ADD4BF4004D9974 /* tracksDetailView.swift in Sources */,
@@ -586,11 +469,15 @@
 				5E3D3C002AD7F54200D6E249 /* ScheduleDetailsView.swift in Sources */,
 				5ED7DAC72ADEBA8E004D9974 /* saveToLocal.swift in Sources */,
 				5ED7DA412ADD6619004D9974 /* sponsorsView.swift in Sources */,
+				5E3E70842AF23586007BF327 /* SpouseProgramView.swift in Sources */,
 				5E3D3C022AD7FF7000D6E249 /* taskSummaryView.swift in Sources */,
 				5E22F74C2AD7BD7400207F8A /* splashView.swift in Sources */,
+				5E79B9352AEBCC6C00A4118F /* galleryData.swift in Sources */,
 				5EB9671F2AD4177B0003B2FD /* CECourseDetailView.swift in Sources */,
 				5E3D3BFE2AD7F38700D6E249 /* ScheduleView.swift in Sources */,
+				5E3E70802AF23269007BF327 /* geohorizonsView.swift in Sources */,
 				5EB967212AD556C90003B2FD /* NavigationModifiers.swift in Sources */,
+				5E79B9332AEBC9ED00A4118F /* themesData.swift in Sources */,
 				5E4869E52AD3E12500435ED8 /* loadJsonData.swift in Sources */,
 				5E4869D32ACED92400435ED8 /* SideMenuView.swift in Sources */,
 				5E4970E52ACD46ED003870AC /* SPEG_NOV_2023.xcdatamodeld in Sources */,
@@ -598,6 +485,7 @@
 				5E2149EC2AD6B84700BB0CCD /* RegistrationView.swift in Sources */,
 				5ED7DAC92ADFE840004D9974 /* HeaderView.swift in Sources */,
 				5E2149F22AD6D87500BB0CCD /* ConferenceView.swift in Sources */,
+				5E79B93B2AEBD32600A4118F /* CECourseData.swift in Sources */,
 				5E4971092ACD78F2003870AC /* home.swift in Sources */,
 				5E3D3BFC2AD7CF8F00D6E249 /* authorsDetailView.swift in Sources */,
 				5ED7DACB2ADFEBB6004D9974 /* footerView.swift in Sources */,
@@ -606,11 +494,17 @@
 				5E4869D52ACFCC5800435ED8 /* CECourseView.swift in Sources */,
 				5E4970D92ACD46EC003870AC /* SPEG_NOV_2023App.swift in Sources */,
 				5E2149F42AD6D88500BB0CCD /* ExhibitionView.swift in Sources */,
+				5E3E70822AF232C4007BF327 /* webViewHelp.swift in Sources */,
+				5E3E707C2AF22D0E007BF327 /* contactsDetailView.swift in Sources */,
+				5E3E707E2AF23252007BF327 /* carrierSympView.swift in Sources */,
 				5ED7DA3D2ADD58D2004D9974 /* keynoteSpeakersView.swift in Sources */,
 				5E3D3C042AD809E100D6E249 /* firebaseDB.swift in Sources */,
+				5E3E70862AF26F4D007BF327 /* RemoteImageView.swift in Sources */,
 				5E49710B2ACE8243003870AC /* ExtraCode.swift in Sources */,
 				5E4869DD2ACFEC0400435ED8 /* NavigateView.swift in Sources */,
 				5ED7DA3F2ADD5CA3004D9974 /* KeyNoteDetailView.swift in Sources */,
+				5E79B9372AEBCDA900A4118F /* orgData.swift in Sources */,
+				5E79B9312AEBC5B800A4118F /* fetschScheduleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,12 +657,11 @@
 		};
 		5E4970FF2ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AE6E0E2A9AC7546051FFC9C /* Pods-SPG 2023.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SPEG-NOV-2023/Preview Content\"";
 				DEVELOPMENT_TEAM = D737A8DLZN;
 				ENABLE_PREVIEWS = YES;
@@ -778,30 +671,32 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "end.com.SPEG-2023";
+				MARKETING_VERSION = 3;
+				PRODUCT_BUNDLE_IDENTIFIER = "end.com.SPG-2023";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5E4971002ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CBFE3BF55877940CE4868FF /* Pods-SPG 2023.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SPEG-NOV-2023/Preview Content\"";
 				DEVELOPMENT_TEAM = D737A8DLZN;
 				ENABLE_PREVIEWS = YES;
@@ -811,25 +706,27 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "end.com.SPEG-2023";
+				MARKETING_VERSION = 3;
+				PRODUCT_BUNDLE_IDENTIFIER = "end.com.SPG-2023";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		5E4971022ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F453B563365DBEF1A6ACB33A /* Pods-SPG 2023Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -850,7 +747,6 @@
 		};
 		5E4971032ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65F7F0D169A3781D776BABC0 /* Pods-SPG 2023Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -871,7 +767,6 @@
 		};
 		5E4971052ACD46ED003870AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41B0152FD86A8634687A9181 /* Pods-SPG 2023-SPG 2023UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -890,7 +785,6 @@
 		};
 		5E4971062ACD46ED003870AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE4A79211F88CF83F3486C0 /* Pods-SPG 2023-SPG 2023UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

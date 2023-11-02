@@ -28,42 +28,44 @@ struct taskSummaryView: View {
         .foregroundColor(Color.red)
         .font(.system(size: 11))
        }
-       .padding(1)
+       Spacer().frame(height: 20)
        Group{
         Text("Title").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.EVT_TITLE)
-        Spacer()
+        Spacer().frame(height: 20)
        }
        Group{
         Text("Session").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.TH_THEME)
-        Spacer()
+        Spacer().frame(height: 20)
        }
        Group{
         Text("Author").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.AU_NAME)
-        Spacer()
+        Spacer().frame(height: 20)
+        
        }
        Group{
         Text("Co-Authors").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.EVT_COAUTHORS)
-        Spacer()
+        Spacer().frame(height: 20)
+        
        }
        Group{
         Text("Presenting Author").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.AU_NAME)
-        Spacer()
+        Spacer().frame(height: 20)
        }
        Group{
         Text("Brief").fontWeight(.bold).foregroundColor(Color.green)
         Divider()
         Text(event.TH_THEME)
-        Spacer()
+        Spacer().frame(height: 20)
        }
       }
       .padding()
@@ -78,9 +80,6 @@ struct taskSummaryView: View {
 
 struct taskSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-//     paperSummaryView(taskSummary: )
-     VStack{
-      
-     }
+     home()
     }
 }

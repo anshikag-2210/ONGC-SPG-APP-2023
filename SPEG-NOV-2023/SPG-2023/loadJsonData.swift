@@ -1,9 +1,64 @@
 import Foundation
 import Combine
 import CoreData
-import SQLite3
+//import SQLite3
 
-struct scheduleStruct: Decodable {
+
+func isInternetAvailable() -> Bool {
+    if let url = URL(string: "https://www.google.com") {
+        let session = URLSession(configuration: .default)
+        let semaphore = DispatchSemaphore(value: 0)
+        
+        var isConnected = false
+        let task = session.dataTask(with: url) { (_, _, error) in
+            if error == nil {
+                isConnected = true
+            }
+            semaphore.signal()
+        }
+        
+        task.resume()
+        semaphore.wait()
+        return isConnected
+    }
+    return false
+}
+
+struct CECourseStruct: Codable {
+    let CE_COURSEID: String
+    let CE_FACULTY: String
+    let CE_FACULTY_DESC: String
+    let CE_FACULTY_ID: String
+    let CE_ID: String
+    let CE_THEME: String
+    let CE_TITLE: String
+    let CMB_ID: String
+    let CE_COURSE_DESC: String
+    let CE_DATE: String
+    let CE_OUTLINE: String
+    let CE_OBJECTIVE: String
+    // Add other properties as needed to match your JSON structure
+
+    // Implement the Encodable methods to conform to both protocols
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(CE_COURSEID, forKey: .CE_COURSEID)
+        try container.encode(CE_FACULTY, forKey: .CE_FACULTY)
+        try container.encode(CE_FACULTY_DESC, forKey: .CE_FACULTY_DESC)
+        try container.encode(CE_FACULTY_ID, forKey: .CE_FACULTY_ID)
+        try container.encode(CE_ID, forKey: .CE_ID)
+        try container.encode(CE_THEME, forKey: .CE_THEME)
+        try container.encode(CE_TITLE, forKey: .CE_TITLE)
+        try container.encode(CMB_ID, forKey: .CMB_ID)
+        try container.encode(CE_COURSE_DESC, forKey: .CE_COURSE_DESC)
+        try container.encode(CE_DATE, forKey: .CE_DATE)
+        try container.encode(CE_OUTLINE, forKey: .CE_OUTLINE)
+        try container.encode(CE_OBJECTIVE, forKey: .CE_OBJECTIVE)
+        // Encode other properties as needed
+    }
+}
+
+struct scheduleStruct: Codable {
     let AU_ID: String
     let AU_NAME: String
     let AU_ORGANIZATION: String
@@ -100,40 +155,28 @@ struct personsStruct: Codable {
     let PD_PTYPE: String
     let PD_WORKPROFILE: String
     let PD_BIO: String
- 
- init(from decoder: Decoder) throws {
-     let container = try decoder.container(keyedBy: CodingKeys.self)
 
-  CMB_ID = try container.decodeIfPresent(String.self, forKey: .CMB_ID) ?? ""
-  PD_COUNTRY = try container.decodeIfPresent(String.self, forKey: .PD_COUNTRY) ?? ""
-  PD_EMAIL = try container.decodeIfPresent(String.self, forKey: .PD_EMAIL) ?? ""
-  PD_NAME = try container.decodeIfPresent(String.self, forKey: .PD_NAME) ?? ""
-  PD_ORGANIZATION = try container.decodeIfPresent(String.self, forKey: .PD_ORGANIZATION) ?? ""
-  PD_PHONE1 = try container.decodeIfPresent(String.self, forKey: .PD_PHONE1) ?? ""
-  PD_PTYPE = try container.decodeIfPresent(String.self, forKey: .PD_PTYPE) ?? ""
-  PD_WORKPROFILE = try container.decodeIfPresent(String.self, forKey: .PD_WORKPROFILE) ?? ""
-  PD_BIO = try container.decodeIfPresent(String.self, forKey: .PD_BIO) ?? ""
- }
+    enum CodingKeys: String, CodingKey {
+        case CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE, PD_BIO
+    }
 
- // Define the CodingKeys enum to match your JSON keys
- enum CodingKeys: String, CodingKey {
-     case CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE, PD_BIO
- }
- 
- static func ==(lhs: personsStruct, rhs: personsStruct) -> Bool {
-     // Implement custom comparison logic here.
-     return lhs.CMB_ID == rhs.CMB_ID &&
-            lhs.PD_COUNTRY == rhs.PD_COUNTRY &&
-            lhs.PD_EMAIL == rhs.PD_EMAIL &&
-            lhs.PD_NAME == rhs.PD_NAME &&
-            lhs.PD_ORGANIZATION == rhs.PD_ORGANIZATION &&
-            lhs.PD_PHONE1 == rhs.PD_PHONE1 &&
-            lhs.PD_PTYPE == rhs.PD_PTYPE &&
-            lhs.PD_WORKPROFILE == rhs.PD_WORKPROFILE &&
-            lhs.PD_BIO == rhs.PD_BIO
- }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        // Use decodeIfPresent to handle missing or null values
+        CMB_ID = try container.decodeIfPresent(String.self, forKey: .CMB_ID) ?? ""
+        PD_COUNTRY = try container.decodeIfPresent(String.self, forKey: .PD_COUNTRY) ?? ""
+        PD_EMAIL = try container.decodeIfPresent(String.self, forKey: .PD_EMAIL) ?? ""
+        PD_NAME = try container.decodeIfPresent(String.self, forKey: .PD_NAME) ?? ""
+        PD_ORGANIZATION = try container.decodeIfPresent(String.self, forKey: .PD_ORGANIZATION) ?? ""
+        PD_PHONE1 = try container.decodeIfPresent(String.self, forKey: .PD_PHONE1) ?? ""
+        PD_PTYPE = try container.decodeIfPresent(String.self, forKey: .PD_PTYPE) ?? ""
+        PD_WORKPROFILE = try container.decodeIfPresent(String.self, forKey: .PD_WORKPROFILE) ?? ""
+        PD_BIO = try container.decodeIfPresent(String.self, forKey: .PD_BIO) ?? ""
+    }
 }
-struct galleryStruct: Decodable {
+
+struct galleryStruct: Codable {
     let CMB_ID: String
     let IM_CATEGORY: String
     let IM_DATE: String
@@ -156,7 +199,7 @@ struct galleryStruct: Decodable {
      case CMB_ID, IM_CATEGORY, IM_DATE, IM_DESC, IM_ID, IM_PATH
  }
 }
-struct organizationsStruct: Decodable {
+struct organizationsStruct: Codable {
     let CMB_ID: String
     let OS_BOOTHS: String
     let OS_NAME: String
@@ -203,7 +246,7 @@ struct organizationsStruct: Decodable {
         case CMB_ID, OS_BOOTHS, OS_NAME, OS_QUANTUM, OS_SUBTYPE, OS_TYPE, OS_WEBSITE
     }
 }
-struct sponsorsStruct: Decodable {
+struct sponsorsStruct: Codable {
     let CMB_ID: Int
     let OS_BOOTHS: String // Use Any type to accommodate both Int and String
     let OS_NAME: String
@@ -251,23 +294,41 @@ func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Err
  }.resume()
 }
 
+//var organizationsData: [organizationsStruct] = []
+var CECoursedata: [CECourseStruct] = []
 var scheduleData: [String: scheduleStruct] = [:]
 var scheduleDataArr: [scheduleStruct] = []
-var themesData: [themeStruct] = []
 var personsData: [personsStruct] = []
 var galleryData: [galleryStruct] = []
 var organizationsData: [organizationsStruct] = []
+var themesData: [themeStruct] = []
 
-func fetchScheduleJSONDataFromObj(from _url: String) {
+//func fetchScheduleJSONDataFromObj(from _url: String) {
+// guard let url = URL(string: _url) else {
+//  scheduleData = [:]
+//     return
+// }
+// fetchData(from: url) { (result: Result<[String: scheduleStruct], Error>) in
+//        switch result {
+//        case .success(let decodedData):
+//            DispatchQueue.main.async {
+//                scheduleData = decodedData
+//            }
+//        case .failure(let error):
+//            print("Error fetching data: \(error)")
+//        }
+//    }
+//}
+
+func fetchCECoursedata(from _url: String) {
  guard let url = URL(string: _url) else {
-  scheduleData = [:]
      return
  }
- fetchData(from: url) { (result: Result<[String: scheduleStruct], Error>) in
+ fetchData(from: url) { (result: Result<[CECourseStruct], Error>) in
         switch result {
         case .success(let decodedData):
             DispatchQueue.main.async {
-                scheduleData = decodedData
+             CECoursedata = decodedData
             }
         case .failure(let error):
             print("Error fetching data: \(error)")
@@ -290,6 +351,7 @@ func fetchScheduleJSONData(from _url: String) {
         }
     }
 }
+
 func fetchThemesJSONData(from _url: String) {
  guard let url = URL(string: _url) else {
      return
@@ -351,91 +413,99 @@ func fetchThemesJSONData(from _url: String) {
 
 
 //fetch persons data
-func fetchPersonsJSONData(from _url: String) {
-    // Fetch data from the internet
-    guard let url = URL(string: _url) else {
-        return
-    }
-
-    fetchData(from: url) { (result: Result<[personsStruct], Error>) in
-        switch result {
-        case .success(let decodedData):
-            if PersonsshouldUpdateLocalData(newData: decodedData) {
-                personsData = decodedData
-             PersonssaveDataToLocalFile(data: decodedData)
-            }
-        case .failure(let error):
-            print("Error fetching data: \(error)")
-        }
-    }
-}
-func PersonsshouldUpdateLocalData(newData: [personsStruct]) -> Bool {
-    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
-        if let loadedData = try? Data(contentsOf: fileURL) {
-            do {
-                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
-                
-                // Compare the loaded data with the new data to determine if they are different
-                return PersonsareArraysDifferent(array1: loadedArray, array2: newData)
-            } catch {
-                print("Error decoding local data: \(error)")
-            }
-        }
-    }
-    
-    // If there was an error reading local data or local data is missing, update
-    return true
-}
-func PersonsareArraysDifferent(array1: [personsStruct], array2: [personsStruct]) -> Bool {
-    if array1.count != array2.count {
-        return true
-    }
-    
-    for (index, item) in array1.enumerated() {
-        if item.CMB_ID != array2[index].CMB_ID ||
-           item.PD_COUNTRY != array2[index].PD_COUNTRY ||
-           item.PD_EMAIL != array2[index].PD_EMAIL ||
-           item.PD_NAME != array2[index].PD_NAME ||
-           item.PD_ORGANIZATION != array2[index].PD_ORGANIZATION ||
-           item.PD_PHONE1 != array2[index].PD_PHONE1 ||
-           item.PD_PTYPE != array2[index].PD_PTYPE ||
-           item.PD_WORKPROFILE != array2[index].PD_WORKPROFILE ||
-           item.PD_BIO != array2[index].PD_BIO {
-            return true
-        }
-    }
-    
-    return false
-}
-func PersonssaveDataToLocalFile(data: [personsStruct]) {
-    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
-        do {
-            let jsonData = try JSONEncoder().encode(data)
-            try jsonData.write(to: fileURL)
-            print("Data saved to file: \(fileURL)")
-        } catch {
-            print("Error saving data to file: \(error)")
-        }
-    }
-}
-
 //func fetchPersonsJSONData(from _url: String) {
-// guard let url = URL(string: _url) else {
-//     return
-// }
-// fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+//    // Fetch data from the internet
+//    guard let url = URL(string: _url) else {
+//        return
+//    }
+//
+//    fetchData(from: url) { (result: Result<[personsStruct], Error>) in
 //        switch result {
 //        case .success(let decodedData):
-//            DispatchQueue.main.async {
-//             personsData = decodedData
+//            if PersonsshouldUpdateLocalData(newData: decodedData) {
+//                personsData = decodedData
+//             PersonssaveDataToLocalFile(data: decodedData)
 //            }
 //        case .failure(let error):
 //            print("Error fetching data: \(error)")
 //        }
 //    }
 //}
+//func PersonsshouldUpdateLocalData(newData: [personsStruct]) -> Bool {
+//    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+//        if let loadedData = try? Data(contentsOf: fileURL) {
+//            do {
+//                let loadedArray = try JSONDecoder().decode([personsStruct].self, from: loadedData)
+//
+//                // Compare the loaded data with the new data to determine if they are different
+//                return PersonsareArraysDifferent(array1: loadedArray, array2: newData)
+//            } catch {
+//                print("Error decoding local data: \(error)")
+//            }
+//        }
+//    }
+//
+//    // If there was an error reading local data or local data is missing, update
+//    return true
+//}
+//func PersonsareArraysDifferent(array1: [personsStruct], array2: [personsStruct]) -> Bool {
+//    if array1.count != array2.count {
+//        return true
+//    }
+//
+//    for (index, item) in array1.enumerated() {
+//        if item.CMB_ID != array2[index].CMB_ID ||
+//           item.PD_COUNTRY != array2[index].PD_COUNTRY ||
+//           item.PD_EMAIL != array2[index].PD_EMAIL ||
+//           item.PD_NAME != array2[index].PD_NAME ||
+//           item.PD_ORGANIZATION != array2[index].PD_ORGANIZATION ||
+//           item.PD_PHONE1 != array2[index].PD_PHONE1 ||
+//           item.PD_PTYPE != array2[index].PD_PTYPE ||
+//           item.PD_WORKPROFILE != array2[index].PD_WORKPROFILE ||
+//           item.PD_BIO != array2[index].PD_BIO {
+//            return true
+//        }
+//    }
+//
+//    return false
+//}
+//func PersonssaveDataToLocalFile(data: [personsStruct]) {
+//    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//        let fileURL = documentsDirectory.appendingPathComponent("personsData.json")
+//        do {
+//            let jsonData = try JSONEncoder().encode(data)
+//            try jsonData.write(to: fileURL)
+//            print("Data saved to file: \(fileURL)")
+//        } catch {
+//            print("Error saving data to file: \(error)")
+//        }
+//    }
+//}
+//
+
+
+
+/// till here
+
+func fetchPersonsJSONData(from _url: String) {
+ guard let url = URL(string: _url) else {
+     return
+ }
+ fetchData(from: url) { (result: Result<[personsStruct], Error>) in
+        switch result {
+        case .success(let decodedData):
+            DispatchQueue.main.async {
+             personsData = decodedData
+            }
+        case .failure(let error):
+            print("Error fetching data: \(error)")
+        }
+    }
+}
+
+
+
 
 func fetchGallerydata(from _url: String) {
  guard let url = URL(string: _url) else {
@@ -452,7 +522,7 @@ func fetchGallerydata(from _url: String) {
         }
     }
 }
-
+//
 
 func fetchOrgdata(from _url: String) {
  guard let url = URL(string: _url) else {
@@ -472,6 +542,10 @@ func fetchOrgdata(from _url: String) {
 
 
 
+
+
+
+
 //func addFavourites(from cbmId: String){
 // do{
 //  let context = CoreDataManager.shared.managedObjectContext
@@ -485,56 +559,56 @@ func fetchOrgdata(from _url: String) {
 // }
 //}
 
-func openDatabase() -> OpaquePointer? {
-  var db: OpaquePointer?
- if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
-  let part1DbPath = documentsDirectory.appendingPathComponent("SPG-2023").appendingPathExtension("sqlite")
-  //(part1DbPath, &db)
-  if sqlite3_open(part1DbPath.path,&db)  == SQLITE_OK {
-    print("Successfully opened connection to database at \(part1DbPath)")
-    return db
-  } else {
-    print("Unable to open database.")
-    //PlaygroundPage.current.finishExecution()
-  }
- }
-return db
-}
-
-func insert(from db: OpaquePointer?) {
- let insertStatementString = "INSERT INTO personsData (CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE ,PD_BIO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
-  var insertStatement: OpaquePointer?
-  // 1
-  if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) ==
-      SQLITE_OK {
-   let CMB_ID: NSString = "Ray"
-   let PD_COUNTRY: NSString = "Ray"
-   let PD_EMAIL: NSString = "Ray"
-   let PD_NAME: NSString = "Ray"
-   let PD_ORGANIZATION: NSString = "Ray"
-   let PD_PHONE1: NSString = "Ray"
-   let PD_PTYPE: NSString = "Ray"
-   let PD_WORKPROFILE: NSString = "Ray"
-   let PD_BIO: NSString = "Ray"
-   sqlite3_bind_text(insertStatement, 2, CMB_ID.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_COUNTRY.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_EMAIL.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_NAME.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_ORGANIZATION.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_PHONE1.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_WORKPROFILE.utf8String, -1, nil)
-   sqlite3_bind_text(insertStatement, 2, PD_BIO.utf8String, -1, nil)
-    if sqlite3_step(insertStatement) == SQLITE_DONE {
-      print("\nSuccessfully inserted row.")
-    } else {
-      print("\nCould not insert row.")
-    }
-  } else {
-    print("\nINSERT statement is not prepared.")
-  }
-  sqlite3_finalize(insertStatement)
-}
-
+//func openDatabase() -> OpaquePointer? {
+//  var db: OpaquePointer?
+// if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
+//  let part1DbPath = documentsDirectory.appendingPathComponent("SPG-2023").appendingPathExtension("sqlite")
+//  //(part1DbPath, &db)
+//  if sqlite3_open(part1DbPath.path,&db)  == SQLITE_OK {
+//    print("Successfully opened connection to database at \(part1DbPath)")
+//    return db
+//  } else {
+//    print("Unable to open database.")
+//    //PlaygroundPage.current.finishExecution()
+//  }
+// }
+//return db
+//}
+//
+//func insert(from db: OpaquePointer?) {
+// let insertStatementString = "INSERT INTO personsData (CMB_ID, PD_COUNTRY, PD_EMAIL, PD_NAME, PD_ORGANIZATION, PD_PHONE1, PD_PTYPE, PD_WORKPROFILE ,PD_BIO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
+//  var insertStatement: OpaquePointer?
+//  // 1
+//  if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) ==
+//      SQLITE_OK {
+//   let CMB_ID: NSString = "Ray"
+//   let PD_COUNTRY: NSString = "Ray"
+//   let PD_EMAIL: NSString = "Ray"
+//   let PD_NAME: NSString = "Ray"
+//   let PD_ORGANIZATION: NSString = "Ray"
+//   let PD_PHONE1: NSString = "Ray"
+//   let PD_PTYPE: NSString = "Ray"
+//   let PD_WORKPROFILE: NSString = "Ray"
+//   let PD_BIO: NSString = "Ray"
+//   sqlite3_bind_text(insertStatement, 2, CMB_ID.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_COUNTRY.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_EMAIL.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_NAME.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_ORGANIZATION.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_PHONE1.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_WORKPROFILE.utf8String, -1, nil)
+//   sqlite3_bind_text(insertStatement, 2, PD_BIO.utf8String, -1, nil)
+//    if sqlite3_step(insertStatement) == SQLITE_DONE {
+//      print("\nSuccessfully inserted row.")
+//    } else {
+//      print("\nCould not insert row.")
+//    }
+//  } else {
+//    print("\nINSERT statement is not prepared.")
+//  }
+//  sqlite3_finalize(insertStatement)
+//}
+//
 
 
 

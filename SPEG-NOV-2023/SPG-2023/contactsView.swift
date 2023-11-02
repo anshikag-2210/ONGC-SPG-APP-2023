@@ -14,23 +14,35 @@ struct contactsView: View {
        result[persons.PD_PTYPE, default: []].append(persons)
       }
       if let contactsData = personsGroupedData["COMMITTEE"] {
-       List(contactsData, id: \.CMB_ID){item in
-          VStack(alignment: .leading){
-           Text(item.PD_NAME)
-            .fontWeight(.bold)
-            .foregroundColor(Color(hue: 0.331, saturation: 0.886, brightness: 0.708))
-            .multilineTextAlignment(.leading)
-           Text(item.PD_WORKPROFILE)
-            .foregroundColor(Color(hue: 1.0, saturation: 0.067, brightness: 0.506))
-            .multilineTextAlignment(.leading)
-           Text(item.PD_EMAIL)
-            .foregroundColor(Color(hue: 1.0, saturation: 0.067, brightness: 0.506))
-            .multilineTextAlignment(.leading)
-           Text(item.PD_PHONE1)
-            .foregroundColor(Color(hue: 1.0, saturation: 0.067, brightness: 0.506))
-            .multilineTextAlignment(.leading)
-          }
+       
+       let CommitteeGroupedData = contactsData.reduce(into: [String: [personsStruct]]()) { result, cmte in
+        result[cmte.PD_WORKPROFILE, default: []].append(cmte)
        }
+       let keys = Set(CommitteeGroupedData.map { $0.key as! String })
+       let uniqueWorkprofile = Array(keys)
+       ScrollView{
+        ForEach(uniqueWorkprofile, id: \.self) { workProfile in
+         if let committeeFilteredData = CommitteeGroupedData[workProfile]{
+          NavigationLink(destination: contactsDetailView(cmteData: committeeFilteredData)){
+           
+           ScrollView {
+            ZStack{
+             Rectangle()
+                 .fill(Color(hue: 0.437, saturation: 0.054, brightness: 0.986))
+                 .frame(maxWidth: .infinity)
+             Text(workProfile)
+                 .foregroundColor(Color.green)
+                 .frame(maxWidth: .infinity, alignment: .leading)
+                 .multilineTextAlignment(.leading)
+                 .lineLimit(nil)
+                 .padding()
+            }
+           }
+          }
+         }
+        }
+       }
+       
       }
 
      }

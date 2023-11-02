@@ -18,11 +18,12 @@ struct keynoteSpeakersView: View {
     List(keyNoteSpeakers, id: \.CMB_ID){item in
      NavigationLink(destination: KeyNoteDetailView(keyNoteSpeaker: item)){
      HStack(spacing: 10) {
-       Image(systemName: "person.circle.fill")
-        .foregroundColor(.green)
-        .imageScale(.large)
-        .baselineOffset(0)
-        .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+      let imageName = "\(item.CMB_ID)"
+      Image(imageName)
+       .resizable()
+       .frame(width: 50, height: 50)
+       .clipShape(Circle())
+       .overlay(Circle().stroke(Color.gray, lineWidth: 1))
        VStack(alignment: .leading){
         Text(item.PD_NAME)
          .fontWeight(.bold)

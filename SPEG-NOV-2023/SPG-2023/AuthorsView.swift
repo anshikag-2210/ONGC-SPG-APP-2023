@@ -18,7 +18,8 @@ struct AuthorsView: View {
        List(authorsData, id: \.CMB_ID) { item in
         NavigationLink(destination: authorsDetailView(author: item)){
          HStack(spacing: 10){
-          Image("author1")
+          let imageName = "\(item.CMB_ID)"
+          Image(imageName)
            .resizable()
            .frame(width: 50, height: 50)
            .clipShape(Circle())

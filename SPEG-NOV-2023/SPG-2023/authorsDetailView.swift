@@ -12,8 +12,10 @@ struct authorsDetailView: View {
  @State private var isFavorited = false
  @State private var imageName = "heart"
     var body: some View {
+//     Text("Coming Soon")
      VStack{
-      Image("author1")
+      let imageName = "\(author.CMB_ID)"
+      Image(imageName)
        .clipShape(Circle())
        .overlay(Circle().stroke(Color.gray, lineWidth: 4))
       Text(author.PD_NAME)
@@ -78,7 +80,7 @@ struct authorsDetailView: View {
         .background(Color(hue: 0.188, saturation: 0.202, brightness: 0.953))
         .padding(3)
        }
-       
+
       }
       Spacer()
      }

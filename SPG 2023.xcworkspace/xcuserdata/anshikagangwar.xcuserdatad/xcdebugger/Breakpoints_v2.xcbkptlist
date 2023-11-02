@@ -14,10 +14,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "fetchScheduleJSONData(from:)"
-            landmarkType = "9">
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "DFA58007-D54B-4B46-8646-9DB835992ABF - 30ace88f032c016e"
@@ -62,10 +62,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
-            landmarkName = "fetchScheduleJSONData(from:)"
-            landmarkType = "9">
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,10 +78,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
-            landmarkName = "fetchScheduleJSONData(from:)"
-            landmarkType = "9">
+            startingLineNumber = "334"
+            endingLineNumber = "334"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "3C915908-5E84-49BC-A662-F5F9AAD9F8B3 - 4f5294ffd1976b4e"
@@ -126,10 +126,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
-            landmarkName = "fetchScheduleJSONData(from:)"
-            landmarkType = "9">
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,8 +142,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
             <Locations>
@@ -222,8 +222,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "fetchData(from:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -601,8 +601,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -617,8 +617,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "477"
-            endingLineNumber = "477"
+            startingLineNumber = "462"
+            endingLineNumber = "462"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -633,8 +633,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "481"
-            endingLineNumber = "481"
+            startingLineNumber = "466"
+            endingLineNumber = "466"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -681,8 +681,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
+            startingLineNumber = "469"
+            endingLineNumber = "469"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -697,8 +697,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "478"
-            endingLineNumber = "478"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -934,8 +934,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "479"
-            endingLineNumber = "479"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -950,8 +950,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "480"
-            endingLineNumber = "480"
+            startingLineNumber = "465"
+            endingLineNumber = "465"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -966,8 +966,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
+            startingLineNumber = "467"
+            endingLineNumber = "467"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -1078,8 +1078,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "289"
-            endingLineNumber = "289"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1094,10 +1094,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "468"
-            endingLineNumber = "468"
-            landmarkName = "fetchOrgdata(from:)"
-            landmarkType = "9">
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1110,10 +1110,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "465"
-            endingLineNumber = "465"
-            landmarkName = "fetchOrgdata(from:)"
-            landmarkType = "9">
+            startingLineNumber = "446"
+            endingLineNumber = "446"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1174,8 +1174,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -1190,8 +1190,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -1238,8 +1238,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1254,10 +1254,10 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "493"
-            endingLineNumber = "493"
-            landmarkName = "openDatabase()"
-            landmarkType = "9">
+            startingLineNumber = "478"
+            endingLineNumber = "478"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "09D30419-450D-4EC0-9B91-630B79EAD7D8 - 14937931d7ae315d"
@@ -1317,8 +1317,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1333,8 +1333,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "549"
-            endingLineNumber = "549"
+            startingLineNumber = "534"
+            endingLineNumber = "534"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -1349,8 +1349,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "551"
-            endingLineNumber = "551"
+            startingLineNumber = "536"
+            endingLineNumber = "536"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -1365,8 +1365,8 @@
             filePath = "SPEG-NOV-2023/SPG-2023/home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1413,10 +1413,266 @@
             filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "506"
-            endingLineNumber = "506"
-            landmarkName = "insert(from:)"
+            startingLineNumber = "491"
+            endingLineNumber = "491"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FA05B32-2B5F-4FAA-A0EF-78A3CE69B91F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchPersonsJSONData(from:)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2FA05B32-2B5F-4FAA-A0EF-78A3CE69B91F - 259b319359815473"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.fetchPersonsJSONData(from: Swift.String) -&gt; ()"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "2FA05B32-2B5F-4FAA-A0EF-78A3CE69B91F - eb16d2689ed2d9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;SPG_2023.personsStruct&gt;, Swift.Error&gt;) -&gt; () in SPG_2023.fetchPersonsJSONData(from: Swift.String) -&gt; ()"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44171E5E-2191-449D-84D0-35D9BA2EA364"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchPersonsJSONData(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1625DED-590E-4DEA-A9F7-F7934EDBD018"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchPersonsJSONData(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D91C8147-7EFB-4D74-BCCA-421C4FEBDF79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchPersonsJSONData(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89D5A65B-7414-44B9-B6E6-DB86DDC0901F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/UpdatePersonsData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchPersonsJSONData(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DF9A103-7285-4808-B67D-C5FCBF8EB8EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/galleryData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "fetchGallerydata(from:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0DF9A103-7285-4808-B67D-C5FCBF8EB8EC - f6f39d7296576817"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.fetchGallerydata(from: Swift.String) -&gt; ()"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/galleryData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "0DF9A103-7285-4808-B67D-C5FCBF8EB8EC - b41f06a2763510cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;SPG_2023.galleryStruct&gt;, Swift.Error&gt;) -&gt; () in SPG_2023.fetchGallerydata(from: Swift.String) -&gt; ()"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/galleryData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EAC014E-506F-499D-9CBD-9293C8E1D1CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/galleryData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchGallerydata(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2690233-922B-47DD-91D9-09BFD7D255AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/galleryData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchGallerydata(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35529FEE-4F69-4293-B7AE-56878FE20007"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/galleryData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchGallerydata(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9ECD9F7-CA85-4799-AB61-16E3D9689B68"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A9ECD9F7-CA85-4799-AB61-16E3D9689B68 - 8ce1a5414eaff642"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.personsStruct.init(from: Swift.Decoder) throws -&gt; SPG_2023.personsStruct"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "A9ECD9F7-CA85-4799-AB61-16E3D9689B68 - 8ce1a5414eaff7a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPG_2023.personsStruct.init(from: Swift.Decoder) throws -&gt; SPG_2023.personsStruct"
+                  moduleName = "SPG 2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anshikagangwar/Desktop/XCODE/FINAL/SPG%202023/SPEG-NOV-2023/SPG-2023/loadJsonData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2616">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
